@@ -14,9 +14,10 @@ Create HTML slides from md using [Pandoc](http://pandoc.org/MANUAL.html#producin
 - [slidy from md](/biof309_fall2018/slides/slidy-pandoc.html)
 
 
-Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) using the command below:
-
-`jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"`
+Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) using the code below:
+`url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"`
+`jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url`
 - [revealjs from ipynb](/biof309_fall2018/slides/revealjs.slides.html)
-The solution for making slides from JupyterLab is not great right now. It can work, but requires some setup.
+The making slides from JupyterLab does not work (great) right now.
+It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
 I would not recommend trying it until the next version of `jupyter nbconvert` comes out.
