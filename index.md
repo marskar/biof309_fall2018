@@ -1,4 +1,4 @@
-I recommend you use one of the following methods to make slides:
+## Host your HTML slides on GitHub pages
 
 Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in RStudio or using the command below:
 
