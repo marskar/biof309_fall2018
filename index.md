@@ -1,6 +1,6 @@
 ## Host your HTML slides on GitHub pages
 
-### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in RStudio or from the command-line as below:
+### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line as below:
 
 ```
 Rscript -e "rmarkdown::render('slidy.Rmd', 'slidy_presentation')"
