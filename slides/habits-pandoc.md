@@ -23,7 +23,7 @@
 
 ------------------
 
-![picture of spaghetti](images/spaghetti.jpg)
+![picture of spaghetti](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lutong_Bahay_-_Bolognese_Spaghetti.jpg/800px-Lutong_Bahay_-_Bolognese_Spaghetti.jpg)
 
 ## Going to sleep
 
