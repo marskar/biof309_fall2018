@@ -1,6 +1,6 @@
 ## Host your HTML slides on GitHub pages
 
-### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in RStudio or using the command below:
+### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in RStudio or from the command-line as below:
 
 ```
 Rscript -e "rmarkdown::render('slidy.Rmd', 'slidy_presentation')"
@@ -9,7 +9,7 @@ Rscript -e "rmarkdown::render('slidy.Rmd', 'slidy_presentation')"
 - [slidy](/biof309_fall2018/slides/slidy.html)
 - [xaringan](/biof309_fall2018/slides/xaringan.html)
 
-### Create HTML slides from md using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) using the command below:
+### Create HTML slides from md using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) from the command-line as below:
 
 ```
 pandoc -t slidy -s habits-pandoc.md -o slidy-pandoc.html
@@ -17,7 +17,7 @@ pandoc -t slidy -s habits-pandoc.md -o slidy-pandoc.html
 - [dzslides](/biof309_fall2018/slides/dzslides-pandoc.html)
 - [slidy](/biof309_fall2018/slides/slidy-pandoc.html)
 
-### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) using the code below:
+### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line as below:
 
 ```
 url="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0"
