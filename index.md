@@ -1,5 +1,4 @@
-<details>
-<summary> ## Host your HTML slides on GitHub pages </summary>
+## Host your HTML slides on GitHub pages
 
 ### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line as below:
 
@@ -30,5 +29,3 @@ jupyter nbconvert revealjs.ipynb --to slides --reveal-prefix=$url
 Exporting slides from JupyterLab does not work (great) right now.
 It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
 I would not recommend trying it until the next version of `jupyter nbconvert` comes out.
-
-</details>
