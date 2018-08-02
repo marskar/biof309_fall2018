@@ -1,13 +1,16 @@
+---
+title: "Zen R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
 The code below creates a text file called `zen.txt`.
 ```{python}
 from this import s
 from codecs import decode
 with open('zen.txt', 'w') as f:
     f.write(decode(s, "rot-13"))
-```
-```{r}
-library(reticulate)
-Sys.which("python")
 ```
 
 The standard approach to reading in files, as described in the [Python Tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
@@ -40,42 +43,24 @@ my_string = read_str('zen.txt')
 print(my_string.splitlines()[0])
 ```
 
-Create a class using dataclass decorator
-```{python}
-from dataclasses import dataclass
-@dataclass
-class TextFile:
-    count = 0
-    filename: str
-
-    def read(self) -> list:
-        with open(self.file) as f:
-            self.string = f.read()
-        TextFile.count += 1
-
-    def reset(self) -> None:
-        del self.string
-        TextFile.count -= 1
-```
-
 Create a class to represent text files
 ```{python}
 class TextFile:
     count = 0
-    def __init__(self, file: str) -> None:
+    def __init__(self, file):
         self.file = file
 
-    def read(self) -> list:
+    def read(self):
         with open(self.file) as f:
             self.string = f.read()
         TextFile.count += 1
 
-    def reset(self) -> None:
+    def reset(self):
         del self.string
         TextFile.count -= 1
-
+ 
+zen = TextFile('zen.txt')
 zen.read()
 print(TextFile.count)
 print(zen.string.splitlines()[0])
 ```
-
