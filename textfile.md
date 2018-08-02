@@ -40,7 +40,7 @@ my_list = read_list('zen.txt')
 my_string = read_str('zen.txt')
 ```
 
-Create a class to represent text files
+Create a class to represent text files.
 ```python
 class TextFile:
     count = 0
@@ -57,7 +57,7 @@ class TextFile:
         TextFile.count -= 1
 ```
 
-Create a class using dataclass decorator
+Create a class using dataclass decorator.
 ```python
 @dataclass
 class TextFile:
@@ -74,7 +74,7 @@ class TextFile:
         TextFile.count -= 1
 ```
 
-Test the `TextFile` class
+Test the `TextFile` class.
 ```python
 zen = TextFile('zen.txt')
 TextFile.count
