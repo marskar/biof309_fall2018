@@ -1,8 +1,10 @@
 ---
 title: "Zen"
 output:
+  html_notebook: default
   html_document:
-    df_print: paged
+    keep_md: yes
+  pdf_document: default
 ---
 
 The code below creates a text file called `zen.txt`.
