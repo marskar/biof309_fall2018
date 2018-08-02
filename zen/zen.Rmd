@@ -1,5 +1,5 @@
 ---
-title: "Zen R Notebook"
+title: "Zen"
 output:
   html_document:
     df_print: paged
@@ -22,7 +22,7 @@ print(my_list[0])
 
 with open('zen.txt') as f:
     my_string = f.readline()
-    
+
 print(my_string.splitlines()[0])
 ```
 
@@ -38,7 +38,7 @@ print(my_list[0])
 def read_str(file):
     with open(file) as f:
         return f.read()
-        
+
 my_string = read_str('zen.txt')
 print(my_string.splitlines()[0])
 ```
@@ -58,7 +58,7 @@ class TextFile:
     def reset(self):
         del self.string
         TextFile.count -= 1
- 
+
 zen = TextFile('zen.txt')
 zen.read()
 print(TextFile.count)
