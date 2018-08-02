@@ -1,3 +1,7 @@
+## Code examples
+
+- [TextFile class](https://github.com/marskar/biof309_fall2018/blob/master/textfile.md)
+
 ## Host your HTML slides on GitHub pages
 
 ### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line as below:
