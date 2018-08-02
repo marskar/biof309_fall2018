@@ -1,5 +1,5 @@
 The code below creates a text file called `zen.txt`.
-```{python}
+```python
 from this import s
 from codecs import decode
 with open('zen.txt', 'w') as f:
@@ -7,7 +7,7 @@ with open('zen.txt', 'w') as f:
 ```
 
 The standard approach to reading in files, as described in the [Python Tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
-```{python}
+```python
 with open('zen.txt') as f:
     my_list = [line for line in f]
 
@@ -16,14 +16,14 @@ with open('zen.txt') as f:
 ```
 
 Obtain the first line.
-```{python}
+```python
 my_list[0]
 my_string.splitlines()[0]
 ```
 
 
 Define functions to read in text.
-```{python}
+```python
 def read_list(file):
     with open(file) as f:
         return [line for line in f]
@@ -34,14 +34,14 @@ def read_str(file):
 ```
 
 Use functions to read in text.
-```{python}
+```python
 my_list = read_list('zen.txt')
 
 my_string = read_str('zen.txt')
 ```
 
 Create a class to represent text files
-```{python}
+```python
 class TextFile:
     count = 0
     def __init__(self, file: str) -> None:
@@ -58,7 +58,7 @@ class TextFile:
 ```
 
 Create a class using dataclass decorator
-```{python}
+```python
 @dataclass
 class TextFile:
     count = 0
@@ -75,7 +75,7 @@ class TextFile:
 ```
 
 Test the `TextFile` class
-```{python}
+```python
 zen = TextFile('zen.txt')
 TextFile.count
 zen.read()
