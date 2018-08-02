@@ -43,6 +43,46 @@ my_string = read_str('zen.txt')
 Create a class to represent text files.
 ```python
 class TextFile:
+    def __init__(self, file: str) -> None:
+        self.file = file
+
+    def read(self) -> list:
+        with open(self.file) as f:
+            self.string = f.read()
+```
+
+Create a class using dataclass decorator.
+```python
+@dataclass
+class TextFile:
+    filename: str
+
+    def read(self) -> list:
+        with open(self.file) as f:
+            self.string = f.read()
+```
+
+Test the `TextFile` class.
+```python
+zen = TextFile('zen.txt')
+zen.read()
+zen.string.splitlines()[0]
+```
+
+The `TextFile` [class] is able to represent any text file, while the `zen` [instance] represents one particular text file, `zen.txt`. By instantiating `zen`, we store a filename in the `zen.file` [instance attribute]. The `read` [instance method] then uses `zen.file` to store the contents of `zen.txt` in `zen.file`.
+
+-> *Coding Challenge* <-
+
+Inside the `TextFile` class definition,
+
+1. Assign the value `0` to a new variable called `count` 
+2. Edit the `read` method to [[increment]] `count` upon use. 
+3. Add a method called `reset` that [[delete]]s `self.text` and [[decrement]]s `count`.
+4. Test whether `count` changes as you `read` and `reset` text files!
+
+Create a class to represent text files.
+```python
+class TextFile:
     count = 0
     def __init__(self, file: str) -> None:
         self.file = file
@@ -81,5 +121,7 @@ TextFile.count
 zen.read()
 TextFile.count
 zen.string.splitlines()[0]
+zen.reset()
+TextFile.count
 ```
 
