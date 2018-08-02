@@ -71,6 +71,8 @@ zen.string.splitlines()[0]
 
 The `TextFile` [class] is able to represent any text file, while the `zen` [instance] represents one particular text file, `zen.txt`. By instantiating `zen`, we store a filename in the `zen.file` [instance attribute]. The `read` [instance method] then uses `zen.file` to store the contents of `zen.txt` in `zen.file`.
 
+The `zen.text` instance attribute does not exist before calling the `read` instance method. Trying to access a non-existent attribute will raise an `AttributeError`. By creating `zen.text`, `read` is changing `zen`'s *state*.
+
 -> *Coding Challenge* <-
 
 Inside the `TextFile` class definition,
