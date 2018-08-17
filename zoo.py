@@ -16,7 +16,7 @@ class Animal:
             else:
                 Animal.inventory.update({self.species: 1})
     def say(self) -> str:
-        return f"My name is {self.name} and I'm a {self.species}!"
+        return f"My name is {self.name} and my species is {self.species}!"
     @classmethod
     def len_names(cls) -> int:
         return len(cls.names)
@@ -48,7 +48,7 @@ class Animal:
         self.last_fed = datetime.now()
         return "Yum!"
     def status(self) -> str:
-        return f"{self.name} was last fed at {datetime.now() - self.last_fed}."
+        return f"{self.name} was last fed at {(datetime.now() - self.last_fed).strftime(%Y-%m-%d %H:%m)}."
 
 #You can think of a dataclass as a robot that writes code for you.
 
@@ -70,7 +70,7 @@ class Animal:
             else:
                 Animal.inventory.update({self.species: 1})
     def say(self) -> str:
-        return f"My name is {self.name} and I'm a {self.species}!"
+        return f"My name is {self.name} and my species is {self.species}!"
     @classmethod
     def len_names(cls) -> int:
         return len(cls.names)
@@ -102,7 +102,7 @@ class Animal:
         self.last_fed = datetime.now()
         return "Yum!"
     def status(self) -> str:
-        return f"{self.name} was last fed at {datetime.now() - self.last_fed}."
+        return f"{self.name} was last fed at {(datetime.now() - self.last_fed).strftime(%Y-%m-%d %H:%m)}."
 
 
 reina = Animal("Reina", "Python regius")
@@ -123,3 +123,34 @@ next(feeding_schedule)
 
 reina.remove()
 reina.replace()
+
+class RegalPython(Animal):
+    def __init__(self, name, species = "Python regius", last_fed = datetime.now()):
+        super().__init__(name, species, last_fed)
+    def hiss(self) -> str:
+        return "Hiss! " + super().say()
+
+class ReticulatedPython(Animal):
+    def __init__(self, name, species = "Python reticulatus", last_fed = datetime.now()):
+        super().__init__(name, species, last_fed)
+    def hiss(self) -> str:
+        return "Hiss! " + super().say()
+
+class Lion(Animal):
+    def __init__(self, name, species = "Pantera leo", last_fed = datetime.now()):
+        super().__init__(name, species, last_fed)
+    def roar(self) -> str:
+        return "Roar! " + super().say()
+
+leo = Lion("Leo")
+leo.name
+leo.species
+leo.last_fed
+leo.roar()
+
+reina = RegalPython("Reina")
+rex = RegalPython("Rex")
+rhett = ReticulatedPython("Rhett")
+rhett.hiss()
+Animal.inventory
+Animal.names
