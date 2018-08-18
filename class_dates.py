@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from typing import List
-from pprint import pprint
 from os import makedirs
 
 def class_dates(start: str, end: str) -> List[str]:
@@ -12,5 +11,5 @@ def class_dates(start: str, end: str) -> List[str]:
             for i in range(weeks_int+1)]
 
 cd = class_dates(start = "2018-09-13", end = "2018-12-13")
-pprint(cd)
+print(cd)
 any(map(makedirs, cd))
