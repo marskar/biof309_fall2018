@@ -26,18 +26,19 @@ def weekly_event(start: int, end: int, weekdays: int,
 
     Examples:
         All arguments that do no have default values should be integers.
-        >>> weekly_event(start = 20180913, end = 20180917, weekdays = 1234560)
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
+        `>>> weekly_event(start = 20180913, end = 20180917, weekdays = 1234560)`
+        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
         All arguments that do no have default values can be strings.
-        >>> weekly_event('20180913', end = '20180917', weekdays = '03456')
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
+        `>>> weekly_event('20180913', end = '20180917', weekdays = '03456')`
+        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
         Punctuations and whitespace in non-default string arguments are ignored.
-        >>> weekly_event('2018-09-13', '2018-09-17', weekdays = '0, 3, 4, 5, 6')
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
+        `>>> weekly_event('2018-09-13', '2018-09-17', weekdays = '0, 3, 4, 5')`
+        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
         The weekdays argument can be any iterable, e.g. list or range object.
-        >>> weekly_event(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])
-        >>> weekly_event(20180913, 20180917, weekdays = range(0, 7))
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
+        `>>> weekly_event(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])`
+        `>>> weekly_event(20180913, 20180917, weekdays = range(0, 7))`
+        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
+
     """
 
     def keep_digits(string):
@@ -66,23 +67,6 @@ def make_folders(names: List[str]) -> str:
     except FileExistsError as e:
         return f'File already exists: {e}.'
 
-make_folders(cd)
 
-# tests
-cd = weekly_event(start = '2018-09-13', end = '2018-12-13', weekdays = 3)
-cd = weekly_event(start = '2018-09-13', end = '2018-12-13', weekdays = [3])
-cd = weekly_event(start = '2018-09-13', end = '2018-12-13', weekdays = (3))
-cd = weekly_event(start = '2018-09-13', end = '2018-12-13', weekdays = {3})
-cd = weekly_event(start=20180913, end=20181213, weekdays=[3])
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = [0, 3])
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = (0, 3))
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = {0, 3})
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = range(0, 4))
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = "0, 1")
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = "01")
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = 0)
-cd = weekly_event(start = 20180913, end = 20181213, weekdays = 10)
-cd
-weekly_event('20180913', end = '20180917', weekdays = '03456')
-weekly_event('2018-09-13', '2018-09-17', weekdays = '0,3,4,5,6')
-weekly_event('2018-09-13', '2018-09-17', weekdays = range(0, 7))
+cd = weekly_event(start=20180913, end=20181213, weekdays=3)
+make_folders(cd)
