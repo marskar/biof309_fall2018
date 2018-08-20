@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from typing import List
-from os import makedirs
 
 
 def weekly_event(start: int, end: int, weekdays: int,
@@ -27,17 +26,14 @@ def weekly_event(start: int, end: int, weekdays: int,
     Examples:
         All arguments that do no have default values should be integers.
         `>>> weekly_event(start = 20180913, end = 20180917, weekdays = 1234560)`
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
+        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
         All arguments that do no have default values can be strings.
         `>>> weekly_event('20180913', end = '20180917', weekdays = '03456')`
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
         Punctuations and whitespace in non-default string arguments are ignored.
         `>>> weekly_event('2018-09-13', '2018-09-17', weekdays = '0, 3, 4, 5')`
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
         The weekdays argument can be any iterable, e.g. list or range object.
         `>>> weekly_event(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])`
         `>>> weekly_event(20180913, 20180917, weekdays = range(0, 7))`
-        ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16']
 
     """
 
@@ -58,15 +54,3 @@ def weekly_event(start: int, end: int, weekdays: int,
     return [(start_date + timedelta(days=i)).strftime(output_format)
             for i in day_range
             if (start_date + timedelta(days=i)).weekday() in weekdays]
-
-
-def make_folders(names: List[str]) -> str:
-    try:
-        any(map(makedirs, names))
-        return f'Created {len(names)} folders.'
-    except FileExistsError as e:
-        return f'File already exists: {e}.'
-
-
-cd = weekly_event(start=20180913, end=20181213, weekdays=3)
-make_folders(cd)
