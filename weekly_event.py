@@ -49,7 +49,7 @@ def weekly_event(start: int, end: int, weekdays: int,
     if isinstance(weekdays, str):
         weekdays = [int(x) for x in list(keep_digits(weekdays))]
     if isinstance(weekdays, int):
-            weekdays = [int(x) for x in list(str(weekdays))]
+        weekdays = [int(x) for x in list(str(weekdays))]
 
     return [(start_date + timedelta(days=i)).strftime(output_format)
             for i in day_range
