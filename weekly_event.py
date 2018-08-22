@@ -44,7 +44,7 @@ def weekly_event(start: int, end: int, weekdays: int,
         return datetime.strptime(keep_digits(date_str), input_format).date()
 
     start_date, end_date = map(parse_date, [str(start), str(end)])
-    day_range = range(0, int((end_date - start_date).days) + 1)
+    day_range = range(int((end_date - start_date).days) + 1)
 
     if isinstance(weekdays, (str, int)):
         weekdays = [int(x) for x in list(keep_digits(str(weekdays)))]
