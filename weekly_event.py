@@ -46,10 +46,8 @@ def weekly_event(start: int, end: int, weekdays: int,
     start_date, end_date = map(parse_date, [str(start), str(end)])
     day_range = range(0, int((end_date - start_date).days) + 1)
 
-    if isinstance(weekdays, str):
-        weekdays = [int(x) for x in list(keep_digits(weekdays))]
-    if isinstance(weekdays, int):
-        weekdays = [int(x) for x in list(str(weekdays))]
+    if isinstance(weekdays, (str, int)):
+        weekdays = [int(x) for x in list(keep_digits(str(weekdays)))]
 
     return [(start_date + timedelta(days=i)).strftime(output_format)
             for i in day_range
