@@ -111,26 +111,26 @@ Schedule
 
 | #  | Date       | Title                                        | Lead            |
 |----|------------|----------------------------------------------|-----------------|
-| 1  | 2017-01-30 | Integrated Development Environments          | Martin          |
-| 2  | 2017-02-06 | Python Basics                                | Ben & Michael   |
-| 3  | 2017-02-13 | Functions, Modules and Packages              | Ben & Michael   |
-| 4  | 2017-02-20 | Loops and Conditionals                       | Ben & Michael   |
-| 5  | 2017-02-27 | Biopython and Sequences                      | Martin          |
-| 6  | 2017-03-06 | NumPy and Arrays                             | Ben             |
-| 7  | 2017-03-13 | Pandas and DataFrames                        | Michael         |
-| 8  | 2017-03-20 | Machine Learning                             | Martin          |
-| 9  | 2017-03-27 | Data Visualization                           | All Instructors |
-| 10 | 2017-04-03 | Web Development                              | Martin          |
-| 11 | 2017-04-10 | Comprehensions and Lambdas                   | All Instructors |
-| 12 | 2017-04-17 | Iterators and Generators                     | All Instructors |
-| 13 | 2017-04-24 | Requested Topics/Review/Final Project Clinic | All Instructors |
-| 14 | 2017-05-01 | Student Presentations                        |                 |
-| 15 | 2017-05-08 | Student Presentations                        |                 |
+| 1  | 2018-09-13 | Integrated Development Environments          | Martin            |
+| 2  | 2018-09-20 | Python Basics                                | All Instructors   |
+| 3  | 2018-09-27 | Functions, Modules and Packages              | All Instructors   |
+| 4  | 2018-10-04 | Loops and Conditionals                       | Liuping & Michael |
+| 5  | 2018-10-11 | Biopython and Sequences                      | Martin            |
+| 6  | 2018-10-18 | NumPy and Arrays                             | Liuping & Michael |
+| 7  | 2018-10-25 | Pandas and DataFrames                        | Michael           |
+| 8  | 2018-11-01 | Machine Learning                             | Martin            |
+| 9  | 2018-11-08 | Data Visualization                           | All Instructors   |
+| 10 | 2018-11-15 | Web Development                              | Martin            |
+| 11 | 2018-11-22 | Comprehensions and Lambdas                   | All Instructors   |
+| 12 | 2018-11-29 | Iterators and Generators                     | All Instructors   |
+| 13 | 2018-12-06 | Requested Topics/Review/Final Project Clinic | All Instructors   |
+| 14 | 2018-12-13 | Student Presentations                        |                   |
+
 
 Homework
 --------
 
-This semester we are taking a new approach to homework assignments. The due dates below are guidelines.
+This semester we are continuing our freefrom approach to homework assignments. The due dates below are guidelines.
 By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The DataCamp career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
 
 This will take 28-67 hours total to complete, depending on which you choose to do.
@@ -151,57 +151,61 @@ This will take 28-67 hours total to complete, depending on which you choose to d
 
 Please use the schedule below as a guide to which DataCamp and PluralSight chapters/lessons correspond to what is covered in class.
 
-01. DUE January 30, 2018 (BEFORE Class)
+01. DUE September 13, 2018 (BEFORE Class)
     - Install [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
     - Install [PyCharm](https://www.jetbrains.com/student)
 
-02. DUE February 6, 2018 (BEFORE Class)
+02. DUE September 20, 2018 (BEFORE Class)
     - [Python Basics](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-1-python-basics)
     - [Python: Getting Started](https://www.pluralsight.com/courses/python-getting-started)
     - [Python Fundamentals](https://www.pluralsight.com/courses/python-fundamentals)
     - Chapters 01-05 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
     - Chapter 02 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
 
-03. DUE February 13, 2018 (BEFORE Class)
+03. DUE September 27, 2018 (BEFORE Class)
     - [Python Lists](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists)
     - [Functions and Packages](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-3-functions-and-packages)
     - [Python – Beyond the Basics](https://www.pluralsight.com/courses/python-beyond-basics)
     - Chapter 08 & 13 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
     - Chapter 03 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
 
-04. DUE February 20, 2018 (BEFORE Class)
+04. DUE October 4, 2018 (BEFORE Class)
     - [Loops](https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops)
     - [Logic, Control Flow and Filtering](https://campus.datacamp.com/courses/intermediate-python-for-data-science/logic-control-flow-and-filtering)
     - [The Python Developer's Toolkit](https://www.pluralsight.com/courses/python-developers-toolkit)
     - Chapter 06, 07, & 09 in
     [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 
-05. DUE February 27, 2018 (BEFORE Class)
+05. DUE October 11, 2018 (BEFORE Class)
     - Biopython TBD
     - Chapter 00-02 in [Biopython-Notebook](https://github.com/tiagoantao/biopython-notebook/tree/master/notebooks)
     - [Unit Testing with Python](https://www.pluralsight.com/courses/unit-testing-python)
 
-06. DUE March 6, 2018 (BEFORE Class)
+06. DUE October 18, 2018 (BEFORE Class)
     - [NumPy](https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-4-numpy)
     - Chapter 02 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
     - Chapter 04 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
     - [Full Stack Web Development with Python (WEB2PY)](https://www.pluralsight.com/courses/full-stack-web-development-python-web2py)
     - [Advanced Python](https://www.pluralsight.com/courses/advanced-python)
 
-07. DUE March 13, 2018 (BEFORE Class)
+07. DUE October 25, 2018 (BEFORE Class)
 	- [Dictionaries & Pandas](https://campus.datacamp.com/courses/intermediate-python-for-data-science/dictionaries-pandas)
 	- Chapter 03 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
 	- Chapter 05-12 in [Python for Data Analysis](https://github.com/wesm/pydata-book)
 	- [Django Fundamentals](https://www.pluralsight.com/courses/django-fundamentals-update)
 
-08. DUE March 20, 2018 (BEFORE Class)
+08. DUE November 1, 2018 (BEFORE Class)
     - [Getting Started with Machine Learning in Python](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/getting-started-with-python)
     - [Predicting with Decision Trees](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/predicting-with-decision-trees)
     - [Improving your Predictions through Random Forests](https://campus.datacamp.com/courses/kaggle-python-tutorial-on-machine-learning/improving-your-predictions-through-random-forests)
     - Chapter 05 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
     - [Testing Django Applications](https://www.pluralsight.com/courses/testing-django-applications)
 
-09. WORK ON FINAL PROJECTS
+09. DUE November 8, 2018 (BEFORE Class)
+    - [Data Visualization with Seaborn](https://www.datacamp.com/courses/data-visualization-with-seaborn)
+    - Chapter 04 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
+
+10. WORK ON FINAL PROJECTS
 Depending on your final project, you might find the following topics useful:
 	- [Error handling](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/09-Errors-and-Exceptions.ipynb)
 	- [Comprehensions](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/10-Iterators.ipynb)
