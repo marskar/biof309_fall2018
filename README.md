@@ -202,6 +202,7 @@ Please use the schedule below as a guide to which DataCamp and PluralSight chapt
     - [Testing Django Applications](https://www.pluralsight.com/courses/testing-django-applications)
 
 09. DUE November 8, 2018 (BEFORE Class)
+    - [Introduction to Data Visualization with Python](https://www.datacamp.com/courses/introduction-to-data-visualization-with-python)
     - [Data Visualization with Seaborn](https://www.datacamp.com/courses/data-visualization-with-seaborn)
     - Chapter 04 in [Python Data Science Handbook](https://github.com/jakevdp/PythonDataScienceHandbook/tree/master/notebooks)
 
