@@ -60,15 +60,13 @@ This is a one-semester course starting on the 30th of January 2018 and finishing
 
 Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_fall2018) and keep up with activities and homework.
 
-Important dates:
+Important FAES Fall 2018 semester dates:
 
-- November 13 – January 26 : Online Registration
-- January 11 : Open House
-- January 30 : Class starts
-- January 29 – February 16 : Late Registration ($10.00 late registration fee per course applies)
-- February 23 : Last day to drop
-- March 30 : Last day to change status (credit or audit)
-- May 8 : Class ends
+* July 9 – September 7: Online Registration.
+* August 23: Open House (Bldg. 10, FAES Academic Center, Classroom B1C209, 4:00 - 6:00 pm)  Refreshments will be served!
+* September 10 – 28: Late Registration ($10 late fee per course applies).
+* September 10: Classes begin.
+* December 14: Classes end.
 
 Required Materials
 ------------------
