@@ -173,8 +173,7 @@ Please use the schedule below as a guide to which DataCamp and PluralSight chapt
     - [Loops](https://campus.datacamp.com/courses/intermediate-python-for-data-science/loops)
     - [Logic, Control Flow and Filtering](https://campus.datacamp.com/courses/intermediate-python-for-data-science/logic-control-flow-and-filtering)
     - [The Python Developer's Toolkit](https://www.pluralsight.com/courses/python-developers-toolkit)
-    - Chapter 06, 07, & 09 in
-    [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
+    - Chapter 06, 07, & 09 in [Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 
 05. DUE October 11, 2018 (BEFORE Class)
     - Biopython TBD
