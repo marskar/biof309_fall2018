@@ -1,8 +1,10 @@
 from datetime import datetime, timedelta
-from typing import List
+from typing import Union, Iterable, List
 
 
-def weekly_event(start: int, end: int, weekdays: int,
+def weekly_event(start: Union[int, str],
+                 end: Union[int, str],
+                 weekdays: Union[int, str, Iterable],
                  input_format: str = '%Y%m%d',
                  output_format: str = '%Y-%m-%d') -> List[str]:
     """Fill in the dates between the start and end dates.
@@ -24,10 +26,10 @@ def weekly_event(start: int, end: int, weekdays: int,
         A list of dates in 'YYYY-MM-DD' format, or as per output_format.
 
     Examples:
-        All arguments that do no have default values should be integers.
+        All arguments that do not have default values can be integers.
         `>>> weekly_event(start = 20180913, end = 20180917, weekdays = 1234560)`
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
-        All arguments that do no have default values can be strings.
+        All arguments that do not have default values can be strings.
         `>>> weekly_event('20180913', end = '20180917', weekdays = '03456')`
         Punctuations and whitespace in non-default string arguments are ignored.
         `>>> weekly_event('2018-09-13', '2018-09-17', weekdays = '0, 3, 4, 5')`
