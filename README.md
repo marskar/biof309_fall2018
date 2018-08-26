@@ -14,7 +14,7 @@ To interact with the materials in the repo using [Binder](https://mybinder.org/)
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_fall2018/master?urlpath=lab)
 
-[![Colab](https://colab.research.google.com/img/colab_favicon_256px.png){width=50%}](http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb)
+[![Colab](https://colab.research.google.com/img/colab_favicon_256px.png | width=50)](http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb)
 
 Instructors:
 ------------
