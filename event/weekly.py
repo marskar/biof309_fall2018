@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from typing import Union, Iterable, List
 
 
-def weekly_event(start: Union[int, str],
+def weekly(start: Union[int, str],
                  end: Union[int, str],
                  weekdays: Union[int, str, Iterable],
                  input_format: str = '%Y%m%d',
@@ -27,18 +27,18 @@ def weekly_event(start: Union[int, str],
 
     Examples:
         All arguments that do not have default values can be integers.
-        `>>> weekly_event(start = 20180913, end = 20180917, weekdays = 1234560)`
+        `>>> weekly(start = 20180913, end = 20180917, weekdays = 1234560)`
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
         All arguments that do not have default values can be strings.
-        `>>> weekly_event('20180913', '20180917', '03456')`
+        `>>> weekly('20180913', '20180917', '03456')`
         Punctuations and whitespace in non-default string arguments are ignored.
-        `>>> weekly_event('2018-09-13', '2018-09-17','0, 3, 4, 5')`
+        `>>> weekly('2018-09-13', '2018-09-17','0, 3, 4, 5')`
         The start and end arguments can be datetime objects.
         `>>> from datetime import date`
-        `>>> weekly_event(date.today(), date.today().replace(year=2019), 12345)`
+        `>>> weekly(date.today(), date.today().replace(year=2019), 12345)`
         The weekdays argument can be any iterable, e.g. list or range object.
-        `>>> weekly_event(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])`
-        `>>> weekly_event(20180913, 20180917, weekdays = range(0, 7))`
+        `>>> weekly(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])`
+        `>>> weekly(20180913, 20180917, weekdays = range(0, 7))`
 
     """
 
