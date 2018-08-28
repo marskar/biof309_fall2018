@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from typing import Union, Iterable, List
 
 
-def weekly(start: Union[int, str],
+def monthly(start: Union[int, str],
                  end: Union[int, str],
                  weekdays: Union[int, str, Iterable],
                  input_format: str = '%Y%m%d',
