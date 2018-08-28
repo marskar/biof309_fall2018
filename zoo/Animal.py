@@ -48,4 +48,4 @@ class Animal:
         self.last_fed = datetime.now()
         return "Yum!"
     def status(self) -> str:
-        return f"{self.name} was last fed at {(datetime.now() - self.last_fed).strftime(%Y-%m-%d %H:%m)}."
+        return f"{self.name} was last fed {round((datetime.now() - self.last_fed).total_seconds() / 60)} minutes ago at {self.last_fed.strftime('%H:%m')}."
