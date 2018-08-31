@@ -1,6 +1,9 @@
-% Habits
-% John Doe
-% March 22, 2005
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: ioslides_presentation
+---
 
 # In the morning
 
