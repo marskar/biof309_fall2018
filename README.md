@@ -10,15 +10,16 @@ Syllabus
 
 Changes are tracked using the git version control system.
 
-To interact with the materials in the repo using [Binder](https://mybinder.org/), please click the button below.
+To interact with the materials in the repo using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (via [Binder](https://mybinder.org/)), please click the button below.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_fall2018/master?urlpath=lab)
 
+Additionally, the Jupyter notebooks in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below. 
 <a href="http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb">
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="48"></a>
 
-Instructors:
-------------
+Instructors
+-----------
 
 * Martin Skarzynski - marskar at gmail dot com
 * Jinping Liu - liu dot jinping at nih dot com
@@ -27,9 +28,9 @@ Instructors:
 Course Description
 ------------------
 
-This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program. 
-Week by week, we will slowly build up your skills and understanding of computer programming and the Python programming language. 
-There will be in-class demonstrations, using [PyCharm](https://www.jetbrains.com/pycharm/features/) and [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), and activities to be completed outside of class, using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
+This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program.
+Week by week, we will slowly build up your skills and understanding of computer programming and the Python programming language.
+There will be in-class demonstrations, using [PyCharm](https://www.jetbrains.com/pycharm/features/) and to a lesser extent [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), and activities to be completed outside of class, using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
 
 Learning Objectives
 -------------------
@@ -57,17 +58,18 @@ In case of an emergency, please send a DM on Slack *and* an email.
 Logistics
 ---------
 
-This is a one-semester course starting on the 30th of January 2018 and finishing on 8th of May 2018.
+This is a one-semester course starting on the 13th of September 2018 and finishing on 13th of December 2018.
 
 **Class Location: Rathskeller (Room B1A199C), Building 60, NIH Bethesda campus**
 
 Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_fall2018) and keep up with activities and homework.
 
+NEW THIS SEMESTER! We will be piloting REMOTE ATTENDANCE and CLASS RECORDINGS via [GoToMeeting](https://global.gotomeeting.com/join/biof309) and [WebEx](https://cbiit.webex.com/join/skarzynskimw). These two options are largely the same, you can pick whichever platform you prefer. Please do **NOT** use this as excuse to skip class and just watch the recorded lectures! This course is **NOT** a Massive Online Open Course (MOOC), it will feature a great deal of group work. Additionally, forming groups to complete the final project is highly encouraged! Remote attendance will work best if you can meet with classmates to work through exercises together. We will do our best to answers questions in the GoToMeeting and WebEx chat windows during class. We will also try to answer all questions on Slack, but please try to ask your questions during class, if at all possible.
+
 Important FAES Fall 2018 semester dates:
 
 * July 9 – September 7: Online Registration.
-* August 23: Open House (Bldg. 10, FAES Academic Center, Classroom B1C209, 4:00 - 6:00 pm)  Refreshments will be served!
-* September 10 – 28: Late Registration ($10 late fee per course applies).
+* September 10 – 28: Late Registration (10 dollar late fee per course applies).
 * September 10: Classes begin.
 * December 14: Classes end.
 
@@ -78,12 +80,12 @@ Required Materials
 
 *Programing without a computer would be an exceptional feat.*
 
-For the course, we will use the
-1. [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
+For the course, you will need
+1. The [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
 
 The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
 
-2. [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
+2. The [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
 
 The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
 
@@ -91,21 +93,28 @@ If you have a .edu email address, please install PyCharm Professional using [thi
 
 If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
-3. [DataCamp](https://www.datacamp.com)
+3. A [UNIX-like system](https://en.wikipedia.org/wiki/Unix-like)
+
+If you use Windows 10, please try to set up the Linux subsystem for Windows. If you use MacOS or Linux, you are all set.
+
+4. A [DataCamp](https://www.datacamp.com) account
 
 The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
+
 We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
-4. [PluralSight](https://www.pluralsight.com)
+5. A [PluralSight](https://www.pluralsight.com) account
 
 Thanks to the DataCamp-PluralSight partnership, we can get 6 month access to WebDevelopment, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
 
-5. [GitHub](https://github.com/)
+6. A [GitHub](https://github.com/) account
 
 All of the course materials are available on [GitHub](https://github.com/).
 Before accessing the [course materials repo](https://github.com/marskar/biof309_fall2018), you should know that
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
+
+7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and slideshows should be written in markdown. To get python syntax highlighting, use three backticks followed by "python".
 
 Schedule
 --------

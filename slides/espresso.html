@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="John Doe" />
+  <meta name="date" content="2005-03-22" />
+  <title>Habits</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #2a211c; color: #bdae9d; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; background-color: #2a211c; color: #bdae9d; border-right: 1px solid #bdae9d; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #bdae9d; background-color: #2a211c; }
+code > span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+code > span.dt { text-decoration: underline; } /* DataType */
+code > span.dv { color: #44aa43; } /* DecVal */
+code > span.bn { color: #44aa43; } /* BaseN */
+code > span.fl { color: #44aa43; } /* Float */
+code > span.ch { color: #049b0a; } /* Char */
+code > span.st { color: #049b0a; } /* String */
+code > span.co { color: #0066ff; font-style: italic; } /* Comment */
+code > span.al { color: #ffff00; } /* Alert */
+code > span.fu { color: #ff9358; font-weight: bold; } /* Function */
+code > span.er { color: #ffff00; font-weight: bold; } /* Error */
+code > span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+code > span.cn { } /* Constant */
+code > span.sc { color: #049b0a; } /* SpecialChar */
+code > span.vs { color: #049b0a; } /* VerbatimString */
+code > span.ss { color: #049b0a; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { } /* Variable */
+code > span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+code > span.op { } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { font-weight: bold; } /* Preprocessor */
+code > span.at { } /* Attribute */
+code > span.do { color: #0066ff; font-style: italic; } /* Documentation */
+code > span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+code > span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Habits</h1>
+  <p class="author">
+John Doe
+  </p>
+  <p class="date">March 22, 2005</p>
+</div>
+<div id="python-code" class="slide section level2">
+<h2>Python code</h2>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> math
+<span class="co"># A comment</span>
+my_str <span class="op">=</span> <span class="st">&quot;A string&quot;</span>
+<span class="cf">for</span> char <span class="kw">in</span> <span class="bu">str</span>(math.pi):
+    <span class="bu">print</span>(char)
+<span class="kw">def</span> weekly(start: Union[<span class="bu">int</span>, <span class="bu">str</span>],
+                 end: Union[<span class="bu">int</span>, <span class="bu">str</span>],
+                 weekdays: Union[<span class="bu">int</span>, <span class="bu">str</span>, Iterable],
+                 input_format: <span class="bu">str</span> <span class="op">=</span> <span class="st">&#39;%Y%m</span><span class="sc">%d</span><span class="st">&#39;</span>,
+                 output_format: <span class="bu">str</span> <span class="op">=</span> <span class="st">&#39;%Y-%m-</span><span class="sc">%d</span><span class="st">&#39;</span>) <span class="op">-&gt;</span> List[<span class="bu">str</span>]:
+    <span class="co">&quot;&quot;&quot;Fill in the dates between the start and end dates.&quot;&quot;&quot;</span>
+    <span class="kw">def</span> keep_digits(string):
+        <span class="cf">return</span> <span class="st">&#39;&#39;</span>.join(char <span class="cf">for</span> char <span class="kw">in</span> string <span class="cf">if</span> char.isdigit())
+    <span class="kw">def</span> parse_date(date_str):
+        <span class="cf">return</span> datetime.strptime(keep_digits(date_str), input_format).date()
+    <span class="cf">if</span> <span class="bu">any</span>(<span class="bu">isinstance</span>(x, (<span class="bu">str</span>, <span class="bu">int</span>)) <span class="cf">for</span> x <span class="kw">in</span> (start, end)):
+        start, end <span class="op">=</span> <span class="bu">map</span>(parse_date, [<span class="bu">str</span>(start), <span class="bu">str</span>(end)])
+    day_range <span class="op">=</span> <span class="bu">range</span>(<span class="bu">int</span>((end <span class="op">-</span> start).days) <span class="op">+</span> <span class="dv">1</span>)
+    <span class="cf">if</span> <span class="bu">isinstance</span>(weekdays, (<span class="bu">str</span>, <span class="bu">int</span>)):
+        weekdays <span class="op">=</span> [<span class="bu">int</span>(x) <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">list</span>(keep_digits(<span class="bu">str</span>(weekdays)))]
+    <span class="cf">return</span> [(start <span class="op">+</span> timedelta(days<span class="op">=</span>i)).strftime(output_format)
+            <span class="cf">for</span> i <span class="kw">in</span> day_range
+            <span class="cf">if</span> (start <span class="op">+</span> timedelta(days<span class="op">=</span>i)).weekday() <span class="kw">in</span> weekdays]</code></pre></div>
+</div>
+<div id="getting-up" class="slide section level2">
+<h2>Getting up</h2>
+<ul>
+<li>Turn off alarm</li>
+<li>Get out of bed</li>
+</ul>
+</div>
+<div id="breakfast" class="slide section level2">
+<h2>Breakfast</h2>
+<ul>
+<li>Eat eggs</li>
+<li>Drink coffee</li>
+</ul>
+</div>
+<div id="in-the-evening" class="titleslide slide section level1"><h1>In the evening</h1></div><div id="dinner" class="slide section level2">
+<h2>Dinner</h2>
+<ul>
+<li>Eat spaghetti</li>
+<li>Drink wine</li>
+</ul>
+</div><div class="slide section level2">
+
+<div class="figure">
+<img src="images/spaghetti.jpg" alt="picture of spaghetti" />
+<p class="caption">picture of spaghetti</p>
+</div>
+</div><div id="going-to-sleep" class="slide section level2">
+<h2>Going to sleep</h2>
+<ul>
+<li>Get in bed</li>
+<li>Count sheep</li>
+</ul>
+</div>
+</body>
+</html>
