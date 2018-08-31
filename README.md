@@ -115,8 +115,7 @@ Before accessing the [course materials repo](https://github.com/marskar/biof309_
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
 
-7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in markdown. To get python syntax highlighting, use start your code with three backticks (\`) and the word "python" and end it with another three backticks (\`).
-
+7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in [Markdown](https://www.markdownguide.org/). To get automatic python syntax highlighting in your Markdown documents on GitHub and in slideshows created from Markdown files, put three backticks (\`) followed by the word "python" above your code and end it with another three backticks (\`). If create a new Python script in PyCharm and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your markdown document!
 
 
 Schedule
