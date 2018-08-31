@@ -1,6 +1,9 @@
-% Habits
-% John Doe
-% March 22, 2005
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: revealjs::revealjs_presentation
+---
 
 # In the morning
 
@@ -21,19 +24,7 @@
 - Eat spaghetti
 - Drink wine
 
-------------------
-
-![picture of spaghetti](images/spaghetti.jpg)
-
 ## Going to sleep
 
 - Get in bed
 - Count sheep
-
-## python code
-
-```python
-print("hi")
-import math
-math.pi
-```

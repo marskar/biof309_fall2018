@@ -1,21 +1,44 @@
 ## Host your HTML slides on GitHub pages
 
-### Knit (Ctrl/Cmd + Shift + K) slides from Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line as below:
-
-```
-Rscript -e "rmarkdown::render('slidy.Rmd', 'slidy_presentation')"
-```
-- [ioslides](/biof309_fall2018/slides/ioslides.html)
-- [slidy](/biof309_fall2018/slides/slidy.html)
-- [xaringan](/biof309_fall2018/slides/xaringan.html)
-
 ### Create HTML slides from md using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) from the command-line as below:
 
 ```
-pandoc -t slidy -s habits-pandoc.md -o slidy-pandoc.html
+pandoc -t dzslides -s habits.md -o pandoc/dzslides-pandoc.html
+pandoc -t revealjs -s habits.md -o pandoc/revealjs-pandoc.html -V revealjs-url=http://lab.hakim.se/reveal-js
+pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
 ```
-- [dzslides](/biof309_fall2018/slides/dzslides-pandoc.html)
-- [slidy](/biof309_fall2018/slides/slidy-pandoc.html)
+Examples:
+- [dzslides](/biof309_fall2018/slides/pandoc/dzslides-pandoc.html)
+- [revealjs](/biof309_fall2018/slides/pandoc/revealjs-pandoc.html)
+- [slidy](/biof309_fall2018/slides/pandoc/slidy-pandoc.html)
+
+### Knit (Ctrl/Cmd + Shift + K) slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line as below:
+
+```
+Rscript -e "rmarkdown::render('habits.md', 'ioslides_presentation', 'r/ioslides-r.html')"
+Rscript -e "rmarkdown::render('habits.md', 'slidy_presentation', 'r/slidy-r.html')"
+```
+
+For revealjs and xaringan slides, you must first run `install.packages('revealjs')` and `install.packages('xaringan')` in RStudio before you can Knit (Ctrl/Cmd + Shift + K). 
+
+You can also run install the packages and render slides from the command-line as below:
+
+**You only need to install the packages once!**
+
+```
+Rscript -e "install.packages('revealjs', repos='http://cran.us.r-project.org')"
+Rscript -e "install.packages('xaringan', repos='http://cran.us.r-project.org')"
+```
+```
+Rscript -e "rmarkdown::render('revealjs.Rmd', output_file = 'r/revealjs-r.html')"
+Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
+```
+Examples:
+- [ioslides](/biof309_fall2018/slides/r/ioslides.html)
+- [slidy](/biof309_fall2018/slides/r/slidy.html)
+- [revealjs](/biof309_fall2018/slides/r/revealjs.html)
+- [xaringan](/biof309_fall2018/slides/r/xaringan.html)
+
 
 ### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line as below:
 
