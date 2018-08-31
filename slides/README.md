@@ -17,9 +17,8 @@ There are many ways to install Pandoc, but I recommend to use [Anaconda](https:/
 Once you have [Anaconda](https://conda.io/docs/glossary.html#anaconda-glossary) or [Miniconda](https://conda.io/docs/glossary.html#miniconda-glossary) installed, you can install pandoc using this command-line command `conda install -yc conda-forge pandoc` and then run the one of the options below:
 
 ```
-pandoc -t dzslides -s habits.md -o pandoc/dzslides-pandoc.html
-pandoc -t revealjs -s habits.md -o pandoc/revealjs-pandoc.html -V revealjs-url=http://lab.hakim.se/reveal-js
-pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
+pandoc -t dzslides --self-contained -s habits.md -o pandoc/dzslides-pandoc.html
+pandoc -t slidy --self-contained -s habits.md -o pandoc/slidy-pandoc.html
 ```
 
 ## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
@@ -34,7 +33,7 @@ Rscript -e "rmarkdown::render('habits.md', 'slidy_presentation', 'r/slidy-r.html
 
 You can also install RStudio by running `conda install -yc r rstudio`, open up a markdown file in RStudio, add a YAML header that specifies the `output_format` as in `habits.Rmd`, save the file and then click Preview/Knit or Press Ctrl/Cmd + Shift + K.
 
-For revealjs and xaringan slides, you must first run `install.packages('revealjs')` and `install.packages('xaringan')` in RStudio before you can Knit (Ctrl/Cmd + Shift + K). 
+For revealjs and xaringan slides, you must first run `install.packages('revealjs')` and `install.packages('xaringan')` in RStudio before you can Knit (Ctrl/Cmd + Shift + K).
 
 **You only need to install the packages once!**
 
