@@ -6,7 +6,7 @@ One major advantage of this is that you can share a url, instead of resorting to
 
 Google Slides can accomplish this goal, but I would recommend you try to generate slides programmatically using the steps below.
 
-Check out the rendered examples at marskar.github.io/slides.
+Check out the rendered examples at [](marskar.github.io/slides).
 
 ### Create HTML slides from markdown using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
