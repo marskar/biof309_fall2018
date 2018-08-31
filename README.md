@@ -14,7 +14,8 @@ To interact with the materials in the repo using [JupyterLab](https://jupyterlab
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_fall2018/master?urlpath=lab)
 
-Additionally, the Jupyter notebooks in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below. 
+Additionally, the Jupyter notebooks in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below.
+
 <a href="http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb">
 <img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="48"></a>
 
@@ -114,7 +115,7 @@ Before accessing the [course materials repo](https://github.com/marskar/biof309_
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
 
-7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in markdown. To get python syntax highlighting, use start your code with three backticks and the word "python" (`\`\`\`python`) and end it with another three backticks (`\`\`\``).
+7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in markdown. To get python syntax highlighting, use start your code with three backticks (\`) and the word "python" and end it with another three backticks (\`).
 
 
 
