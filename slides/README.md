@@ -65,7 +65,7 @@ Exporting slides from JupyterLab does not work (great) right now.
 It requires some [additional setup](https://github.com/jupyterlab/jupyterlab/issues/4067).
 I would not recommend trying it until the next version of `jupyter nbconvert` comes out.
 
-Luckily, there are other ways to make slides from a jupyter notebook.
+Luckily, there are other ways to make slides from a Jupyter Notebook.
 
 1. The easiest way is to use [nbviewer](https://nbviewer.jupyter.org/), so that you can switch between [notebook](http://nbviewer.jupyter.org/github/marskar/biof309_spring2018/blob/master/slides.ipynb) and [slide view](http://nbviewer.jupyter.org/format/slides/github/marskar/biof309_spring2018/blob/master/slides.ipynb).
 2. Another approach is to use [binder for interactive notebooks/slideshows](https://mybinder.org/v2/gh/mgeier/jupyter-presentation/master?filepath=jupyter-presentation.ipynb).
