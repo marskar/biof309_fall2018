@@ -50,7 +50,7 @@ Rscript -e "rmarkdown::render('revealjs.Rmd', output_file = 'r/revealjs-r.html')
 Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
-### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line as below:
+### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
 You can also create slides from a Jupyter Notebook using `jupyter nbconvert`.
 
