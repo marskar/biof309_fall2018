@@ -16,8 +16,7 @@ To interact with the materials in the repo using [JupyterLab](https://jupyterlab
 
 Additionally, the Jupyter notebooks in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below.
 
-<a href="http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb">
-<img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="48"></a>
+<a href="http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="48"></a>
 
 Instructors
 -----------
@@ -39,11 +38,10 @@ Learning Objectives
 By the end of this course you should be able to:
 1. Look at a task and determine if you can or should automate it
 2. Create working Python programs
-3. Understand the difference between Python object types (i.e. lists, dicts)
+3. Understand the difference between Python object types (e.g. lists, dicts)
 4. Perform data analysis and visualization with Python
 5. Use git for version control and collaboration
 6. Demonstrate your Python skills with a project
-
 
 Communication
 ------------
