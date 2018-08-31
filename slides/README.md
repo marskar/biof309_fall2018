@@ -4,7 +4,7 @@ The goal of this tutorial is to demonstrate how to make HTML slidedecks that can
 
 One major advantage of this is that you can share a url, instead of resorting to email or transferring files using USB drives.
 
-Google Slides can accomplish this goal, but I would recommend you try to generate slides programmatically using the steps below.
+Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to generate slides programmatically using the steps below.
 
 Check out the rendered examples at [https://marskar.github.io/slides/](https://marskar.github.io/slides/).
 
