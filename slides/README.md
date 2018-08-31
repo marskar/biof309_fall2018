@@ -1,4 +1,4 @@
-## Host your HTML slides on GitHub pages
+# Host your HTML slides on GitHub pages
 
 The goal of this tutorial is to demonstrate how to make HTML slidedecks that can be put on the web.
 
@@ -8,7 +8,7 @@ Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to g
 
 Check out the rendered examples at [https://marskar.github.io/slides/](https://marskar.github.io/slides/).
 
-### Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
+## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
 The easiest way to create a slideshow is to write a simple markdown file, like `habits.md`, and use Pandoc to convert it to one of the possible HTML formats.
 
@@ -22,7 +22,7 @@ pandoc -t revealjs -s habits.md -o pandoc/revealjs-pandoc.html -V revealjs-url=h
 pandoc -t slidy -s habits.md -o pandoc/slidy-pandoc.html
 ```
 
-### Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
+## Knit slides from md or Rmd to HTML in [RStudio](https://rmarkdown.rstudio.com/lesson-11.html) or from the command-line
 
 First, you will need to install R. Again, I recommend installing [Anaconda or Miniconda](https://docs.anaconda.com/anaconda/install/) and then running `conda install -yc r r-essentials`.
 
@@ -50,7 +50,7 @@ Rscript -e "rmarkdown::render('revealjs.Rmd', output_file = 'r/revealjs-r.html')
 Rscript -e "rmarkdown::render('xaringan.Rmd', output_file = 'r/xaringan.html')"
 ```
 
-### Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
+## Create HTML slides from ipynb using [nbconvert](https://nbconvert.readthedocs.io/en/latest/) from the command-line
 
 You can also create slides from a Jupyter Notebook using `jupyter nbconvert`.
 
