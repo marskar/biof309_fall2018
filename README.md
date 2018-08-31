@@ -64,7 +64,7 @@ This is a one-semester course starting on the 13th of September 2018 and finishi
 
 Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_fall2018) and keep up with activities and homework.
 
-NEW THIS SEMESTER! We will be piloting REMOTE ATTENDANCE and CLASS RECORDINGS via [GoToMeeting](https://global.gotomeeting.com/join/biof309) and [WebEx](https://cbiit.webex.com/join/skarzynskimw). These two options are largely the same, you can pick whichever platform you prefer. Please do **NOT** use this as excuse to skip class and just watch the recorded lectures! This course is **NOT** a Massive Online Open Course (MOOC), it will feature a great deal of group work. Additionally, forming groups to complete the final project is highly encouraged! Remote attendance will work best if you can meet with classmates to work through exercises together. We will do our best to answers questions in the GoToMeeting and WebEx chat windows during class. We will also try to answer all questions on Slack, but please try to ask your questions during class, if at all possible.
+NEW THIS SEMESTER! We will be piloting REMOTE ATTENDANCE and CLASS RECORDINGS via [GoToMeeting](https://www.gotomeet.me/biof309) and [WebEx](https://cbiit.webex.com/join/skarzynskimw). These two options are largely the same, you can pick whichever platform you prefer. Please do **NOT** use this as excuse to skip class and just watch the recorded lectures! This course is **NOT** a Massive Online Open Course (MOOC), it will feature a great deal of group work. Additionally, forming groups to complete the final project is highly encouraged! Remote attendance will work best if you can meet with classmates to work through exercises together. We will do our best to answers questions in the GoToMeeting and WebEx chat windows during class. We will also try to answer all questions on Slack, but please try to ask your questions during class, if at all possible.
 
 Important FAES Fall 2018 semester dates:
 
@@ -114,7 +114,9 @@ Before accessing the [course materials repo](https://github.com/marskar/biof309_
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
 
-7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and slideshows should be written in markdown. To get python syntax highlighting, use three backticks followed by "python".
+7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in markdown. To get python syntax highlighting, use start your code with three backticks and the word "python" (`\`\`\`python`) and end it with another three backticks (`\`\`\``).
+
+
 
 Schedule
 --------
