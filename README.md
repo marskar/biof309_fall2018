@@ -14,7 +14,7 @@ To interact with the materials in the repo using [JupyterLab](https://jupyterlab
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/marskar/biof309_fall2018/master?urlpath=lab)
 
-Additionally, the Jupyter notebooks in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below.
+Additionally, the [Jupyter Notebooks (`ipynb` files)](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) in this repo can be opened in [Google colab](https://colab.research.google.com) by clicking the icon below.
 
 <a href="http://colab.research.google.com/github/marskar/biof309_fall2018/blob/master/index.ipynb"><img src="https://colab.research.google.com/img/colab_favicon_256px.png" width="48"></a>
 
@@ -30,7 +30,7 @@ Course Description
 
 This course is designed for non-programmers, biologists, or those without specific knowledge of Python to learn how to program.
 Week by week, we will slowly build up your skills and understanding of computer programming and the Python programming language.
-There will be in-class demonstrations, using [PyCharm](https://www.jetbrains.com/pycharm/features/) and to a lesser extent [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html), and activities to be completed outside of class, using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
+There will be in-class demonstrations, using [PyCharm](https://www.jetbrains.com/pycharm/features/) and to a lesser extent [JupyterLab](http://jupyterlab.readthedocs.io), and activities to be completed outside of class, using [DataCamp](https://www.datacamp.com), for you to practice and learn at your own pace.
 
 Learning Objectives
 -------------------
@@ -86,15 +86,15 @@ The Anaconda installer will automatically install most of the software we will u
 
 2. The [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
 
-The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of PyCharm, the best (in my humble opinion) Python Integrated Development Environment (IDE).
+The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/), the best (in my humble opinion) Python Integrated Development Environment (IDE).
 
-If you have a .edu email address, please install PyCharm Professional using [this link](https://www.jetbrains.com/student/)
+If you have a .edu email address, please install [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/) Professional using [this link](https://www.jetbrains.com/student/).
 
 If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
 3. A [UNIX-like system](https://en.wikipedia.org/wiki/Unix-like)
 
-If you use Windows 10, please try to set up the Linux subsystem for Windows. If you use MacOS or Linux, you are all set.
+If you use Windows 10, please try to set up the [Windows subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If you use MacOS or Linux, you are all set.
 
 4. A [DataCamp](https://www.datacamp.com) account
 
@@ -104,7 +104,7 @@ We will discuss the most interesting examples during class and point out others 
 
 5. A [PluralSight](https://www.pluralsight.com) account
 
-Thanks to the DataCamp-PluralSight partnership, we can get 6 month access to WebDevelopment, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
+Thanks to the DataCamp-PluralSight partnership, we can get 6 month access to Web Development, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
 
 6. A [GitHub](https://github.com/) account
 
@@ -113,18 +113,29 @@ Before accessing the [course materials repo](https://github.com/marskar/biof309_
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
 
-7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in [Markdown](https://www.markdownguide.org/). 
+7. [Pandoc](https://pandoc.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) (and the [R programming language](https://www.rstudio.com/products/rstudio/download/)), or [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
 
-Pro-tip 1: To get automatic python syntax highlighting in your Markdown documents on GitHub and in slideshows created from Markdown files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in Markdown.
+It is also highly suggest that you avoid the horrors of Microsoft Office.
 
-Pro-tip 2: If you create a new Python script in PyCharm and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your markdown document!
+- Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) should be in [Markdown](https://www.markdownguide.org/) format. For example, the schedule below is a [Markdown](https://www.markdownguide.org/extended-syntax/#tables) table.
+- Instead of using Microsoft Word & Powerpoint and the doc(x) & ppt(x) formats, write documents and [slideshows](https://marskar.github.io/slides/) in [Markdown](https://www.markdownguide.org/) format and then converted into the desired output format using one of the options below:
+> - [Pandoc](https://pandoc.org/),
+> - [RStudio](https://www.rstudio.com/products/rstudio/download/) (which requires installing the [R programming language](https://www.rstudio.com/products/rstudio/download/)),
+> - [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (or the classic [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html)).
 
+Instructions for how to turn [Markdown](https://www.markdownguide.org/), [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html), and [`ipynb`](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) files into slides are available [here](https://marskar.github.io/slides/).
+
+Pro-tip 1: You can write [Markdown](https://www.markdownguide.org/) in [PyCharm](https://www.jetbrains.com/pycharm/features/)! Press Ctrl/Cmd+N, then Enter, type out the name of the [Markdown](https://www.markdownguide.org/) file (must end in `.md`) you want to create, and press Enter again. You get [Markdown](https://www.markdownguide.org/) syntax highlighting and a live preview of your rendered [Markdown](https://www.markdownguide.org/)!
+
+Pro-tip 2: If you create a new Python scratch file in [PyCharm](https://www.jetbrains.com/pycharm/features/) (Press Ctrl/Cmd+Shift+N, then Enter) and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your [Markdown](https://www.markdownguide.org/) document! As soon as you take the file out of the Scratches folder, [PyCharm](https://www.jetbrains.com/pycharm/features/) will treat it like a [Markdown](https://www.markdownguide.org/) file again! In short, [PyCharm](https://www.jetbrains.com/pycharm/features/) will auto-detect the file type based on its extension, but this does not apply to scratch files!
+
+Pro-tip 3: To get automatic python syntax highlighting in your [Markdown](https://www.markdownguide.org/) documents on [GitHub](https://github.com/) and in [slideshows](https://marskar.github.io/slides/) created from [Markdown](https://www.markdownguide.org/) files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in [Markdown](https://www.markdownguide.org/).
 
 Schedule
 --------
 
-| #  | Date       | Title                                        | Lead            |
-|----|------------|----------------------------------------------|-----------------|
+| #  | Date       | Title                                        | Lead              |
+|----|------------|----------------------------------------------|-------------------|
 | 1  | 2018-09-13 | Integrated Development Environments          | Martin            |
 | 2  | 2018-09-20 | Python Basics                                | All Instructors   |
 | 3  | 2018-09-27 | Functions, Modules and Packages              | All Instructors   |
@@ -144,7 +155,7 @@ Schedule
 Homework
 --------
 
-This semester we are continuing our freefrom approach to homework assignments. The due dates below are guidelines.
+This semester we are continuing our free-from approach to homework assignments. The due dates below are guidelines.
 By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The DataCamp career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
 
 This will take 28-67 hours total to complete, depending on which you choose to do.
