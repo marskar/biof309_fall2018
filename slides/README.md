@@ -1,6 +1,8 @@
 ## Host your HTML slides on GitHub pages
 
-The goal is put slides up on the web, so you can share a url, instead of resorting to email or transferring files using USB drives.
+The goal of this tutorial is to demonstrate how to make HTML slidedecks that can be put on the web.
+
+One major advantage of this is that you can share a url, instead of resorting to email or transferring files using USB drives.
 
 Google Slides can accomplish this goal, but I would recommend you try to generate slides programmatically using the steps below.
 
