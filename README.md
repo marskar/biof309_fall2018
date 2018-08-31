@@ -115,7 +115,11 @@ Before accessing the [course materials repo](https://github.com/marskar/biof309_
 * it is likely to be under constant development throughout the semester and
 * you are not expected to work through _everything_ contained therein!
 
-7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in [Markdown](https://www.markdownguide.org/). To get automatic python syntax highlighting in your Markdown documents on GitHub and in slideshows created from Markdown files, put three backticks (\`) followed by the word "python" above your code and end it with another three backticks (\`). If create a new Python script in PyCharm and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your markdown document!
+7. It is also highly suggest that you forgo the horrors of Microsoft Office Word and Powerpoint. Documents and [slideshows](https://marskar.github.io/slides/) should be written in [Markdown](https://www.markdownguide.org/). 
+
+Pro-tip 1: To get automatic python syntax highlighting in your Markdown documents on GitHub and in slideshows created from Markdown files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in Markdown.
+
+Pro-tip 2: If you create a new Python script in PyCharm and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your markdown document!
 
 
 Schedule
@@ -295,4 +299,4 @@ Grading the __final project__ will be done using the following rubric:
 Course Materials
 ----------------
 
-Course materials are available in the course [GitHub repository](https://github.com/marskar/BIO309_Fall2017).
+Course materials are available in the course [GitHub repository](https://github.com/marskar/biof309_fall2018).
