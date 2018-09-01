@@ -8,7 +8,7 @@ Syllabus
 
 *This document is subject to revision!*
 
-Changes are tracked using the git version control system.
+Changes are tracked using the [git version control system](https://git-scm.com/).
 
 To interact with the materials in the repo using [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (via [Binder](https://mybinder.org/)), please click the button below.
 
@@ -40,7 +40,7 @@ By the end of this course you should be able to:
 2. Create working Python programs
 3. Understand the difference between Python object types (e.g. lists, dicts)
 4. Perform data analysis and visualization with Python
-5. Use git for version control and collaboration
+5. Use [git](https://git-scm.com/) for version control and collaboration
 6. Demonstrate your Python skills with a project
 
 Communication
@@ -50,9 +50,9 @@ Communication
 
 If you cannot find the answer, please make sure to ask your question thoughtfully (https://stackoverflow.com/help/how-to-ask) and provide everything needed to answer e.g. code, error message, dataset, etc.
 
-In general, please use the [course Slack workspace](https://biof309.slack.com) to communicate with classmates and instructors. If you have a course-relevant question or something to share, Slack is simply better than email. In case of personal/private question/concerns, please use Slack direct message (DM).
+In general, please use the [course Slack workspace](https://biof309.slack.com) to communicate with classmates and instructors. If you have a course-relevant question or something to share, [Slack](https://biof309.slack.com) is simply better than email. In case of personal/private question/concerns, please use [Slack](https://biof309.slack.com) direct message (DM).
 
-In case of an emergency, please send a DM on Slack *and* an email.
+In case of an emergency, please send a DM on [Slack](https://biof309.slack.com) *and* an email.
 
 Logistics
 ---------
@@ -61,9 +61,9 @@ This is a one-semester course starting on the 13th of September 2018 and finishi
 
 **Class Location: Rathskeller (Room B1A199C), Building 60, NIH Bethesda campus**
 
-Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [github repository](https://github.com/marskar/biof309_fall2018) and keep up with activities and homework.
+Attendance in class is strongly recommended; however, we realize other commitments may occasionally prevent attendance. If you miss a class, please review the materials available at the course [GitHub repository](https://github.com/marskar/biof309_fall2018) and keep up with activities and homework.
 
-NEW THIS SEMESTER! We will be piloting REMOTE ATTENDANCE and CLASS RECORDINGS via [GoToMeeting](https://www.gotomeet.me/biof309) and [WebEx](https://cbiit.webex.com/join/skarzynskimw). These two options are largely the same, you can pick whichever platform you prefer. Please do **NOT** use this as excuse to skip class and just watch the recorded lectures! This course is **NOT** a Massive Online Open Course (MOOC), it will feature a great deal of group work. Additionally, forming groups to complete the final project is highly encouraged! Remote attendance will work best if you can meet with classmates to work through exercises together. We will do our best to answers questions in the GoToMeeting and WebEx chat windows during class. We will also try to answer all questions on Slack, but please try to ask your questions during class, if at all possible.
+NEW THIS SEMESTER! We will be piloting REMOTE ATTENDANCE and CLASS RECORDINGS via [GoToMeeting](https://www.gotomeet.me/biof309) and [WebEx](https://cbiit.webex.com/join/skarzynskimw). These two options are largely the same, you can pick whichever platform you prefer. Please do **NOT** use this as excuse to skip class and just watch the recorded lectures! This course is **NOT** a Massive Online Open Course (MOOC), it will feature a great deal of group work. Additionally, forming groups to complete the final project is highly encouraged! Remote attendance will work best if you can meet with classmates to work through exercises together. We will do our best to answers questions in the GoToMeeting and WebEx chat windows during class. We will also try to answer all questions on [Slack](https://biof309.slack.com), but please try to ask your questions during class, if at all possible.
 
 Important FAES Fall 2018 semester dates:
 
