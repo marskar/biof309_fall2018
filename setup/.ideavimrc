@@ -1,0 +1,67 @@
+" ============================================================================
+" Emulated plugins
+" ============================================================================
+" https://github.com/JetBrains/ideavim
+set surround
+" Commands: ys, cs, ds, S
+
+" set vim-multiple-cursors
+" Commands: <A-n>, <A-x>, <A-p>, g<A-n>
+
+" ============================================================================
+" Set commands
+" ============================================================================
+" https://github.com/JetBrains/ideavim/blob/master/doc/set-commands.md
+
+" Integrate with system clipboard
+set clipboard=unnamedplus,unnamed
+
+" The ":substitute" flag 'g' is default on
+" No need to add g at the end substitution command
+set gdefault
+
+" Highlight search results
+set hlsearch
+
+" Ignore case when searching
+set ignorecase
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" pairs of characters that "%" can match
+set matchpairs=(:),[:],{:},<:>
+
+" number formats recognized for CTRL-A command
+set nrformats+=alpha
+set nrformats-=octal
+
+" Use hybrid (absolute and relative) numbers
+set number relativenumber
+
+" message on status line to show current mode
+set showmode
+
+" When searching try to be smart about cases
+set smartcase
+
+" time that is waited for a mapped key sequence
+set timeoutlen=500
+
+" use visual bell instead of beeping
+set visualbell
+
+" searches wrap around the end of the file
+set wrapscan
+
+" ============================================================================
+" IDE actions
+" ============================================================================
+
+nnoremap <Space>l :action ReformatCode<CR>
+nnoremap <Space>d :action GotoDeclaration<CR>
+nnoremap <Space>f :action GotoFile<CR>
+nnoremap <Space>c :action GotoClass<CR>
+nnoremap <Space>s :action GotoSymbol<CR>
+nnoremap <Space>e :action SearchEverywhere<CR>
+nnoremap <Space>r :action RecentFiles<CR>
