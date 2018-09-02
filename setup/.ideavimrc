@@ -58,10 +58,17 @@ set wrapscan
 " IDE actions
 " ============================================================================
 
-nnoremap <Space>l :action ReformatCode<CR>
+nnoremap <Space>c :action ActivatePythonConsoleToolWindow<CR>
 nnoremap <Space>d :action GotoDeclaration<CR>
-nnoremap <Space>f :action GotoFile<CR>
-nnoremap <Space>c :action GotoClass<CR>
-nnoremap <Space>s :action GotoSymbol<CR>
 nnoremap <Space>e :action SearchEverywhere<CR>
+nnoremap <Space>f :action GotoFile<CR>
+nnoremap <Space>i :action GotoImplementation<CR>
+nnoremap <Space>l :action ReformatCode<CR> " lint
+nnoremap <Space>n :action MethodDown<CR>
+nnoremap <Space>o :action GotoClass<CR>
+nnoremap <Space>p :action MethodUp<CR>
 nnoremap <Space>r :action RecentFiles<CR>
+nnoremap <Space>s :action GotoSymbol<CR>
+nnoremap <Space>t :action ActivateTerminalToolWindow<CR>
+nnoremap <Space>u :action FindUsages<CR>
+nnoremap <Space>w :action JumpToLastWindow<CR>
