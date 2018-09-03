@@ -57,6 +57,8 @@ set wrapscan
 " ============================================================================
 " IDE actions
 " ============================================================================
+"
+nnoremap <Space> :action ExecuteInPyConsoleAction<CR>
 
 nnoremap ga :action GotoAction<CR>
 nnoremap gc :action GotoClass<CR>
@@ -84,7 +86,10 @@ nnoremap [u :action GotoPrevElementUnderCaretUsage<CR>
 
 " backslash as leader key mappings
 nnoremap <Bslash>a :action SelectAllOccurrences<CR>
+nnoremap <Bslash>b :action ShowBookmarks<CR>
 nnoremap <Bslash>c :action ActivatePythonConsoleToolWindow<CR>
+nnoremap <Bslash>d :action ActivateDatabaseToolWindow<CR>
+nnoremap <Bslash>e :action ActivateEventLogToolWindow<CR>
 nnoremap <Bslash>h :action HideAllWindows<CR>
 nnoremap <Bslash>i :action GotoImplementation<CR>
 nnoremap <Bslash>l :action ReformatCode<CR>
@@ -93,8 +98,10 @@ nnoremap <Bslash>n :action ShowNavBar<CR>
 nnoremap <Bslash>o :action ChangeSplitOrientation<CR>
 nnoremap <Bslash>q :action CloseProject<CR>
 nnoremap <Bslash>r :action Refactorings.QuickListPopupAction<CR>
-nnoremap <Bslash>s :action Synchronize<CR>
+nnoremap <Bslash>s :action ActivateSciViewToolWindow<CR>
 nnoremap <Bslash>t :action ActivateTerminalToolWindow<CR>
+nnoremap <Bslash>u :action Synchronize<CR>
+nnoremap <Bslash>v :action Vcs.QuickListPopupAction<CR>
 nnoremap <Bslash>w :action JumpToLastWindow<CR>
 
 " clear search highlighting when hitting backslash twice
