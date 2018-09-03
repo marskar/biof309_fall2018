@@ -59,49 +59,44 @@ set wrapscan
 " ============================================================================
 
 nnoremap ga :action GotoAction<CR>
-nnoremap gb :action GotoNextBookmark<CR>
-nnoremap gB :action GotoPreviousBookmark<CR>
 nnoremap gc :action GotoClass<CR>
 nnoremap gd :action GotoDeclaration<CR>
 nnoremap gf :action GotoFile<CR>
-nnoremap gr :action RecentFiles<CR>
-nnoremap grc :action RecentlyChangedFiles<CR>
+nnoremap gr :action GotoRelated<CR>
 nnoremap gs :action GotoSymbol<CR>
 
-" unimpaired mappings
+nnoremap g; :action JumpToLastChange<CR>
+nnoremap g, :action JumpToNextChange<CR>
+
+" unimpaired-style mappings
 nnoremap [<space> O<esc>j
 nnoremap ]<space> o<esc>k]
+nnoremap ]b :action GotoNextBookmark<CR>
+nnoremap [b :action GotoPreviousBookmark<CR>
+nnoremap ]e :action GotoNextError<CR>
+nnoremap [e :action GotoPreviousError<CR>
 nnoremap ]m :action MethodDown<CR>
-nnoremap [M :action MethodUp<CR>
+nnoremap [m :action MethodUp<CR>
 nnoremap ]o :action SelectNextOccurrence<CR>
-nnoremap [o  :action SelectPreviousOccurrence<CR>
+nnoremap [o :action SelectPreviousOccurrence<CR>
 nnoremap ]u :action GotoNextElementUnderCaretUsage<CR>
 nnoremap [u :action GotoPrevElementUnderCaretUsage<CR>
 
-" leader key mappings
-nnoremap <Bslash>c :action ActivatePythonConsoleToolWindow<CR>
-nnoremap <Bslash>t :action ActivateTerminalToolWindow<CR>
-nnoremap <Space>o :action HideAllWindows<CR>
-nnoremap <Space>w :action JumpToLastWindow<CR>
-nnoremap <Bslash>i :action GotoImplementation<CR>
+" backslash as leader key mappings
 nnoremap <Bslash>a :action SelectAllOccurrences<CR>
-nnoremap <Space>q :action CloseProject<CR>
+nnoremap <Bslash>c :action ActivatePythonConsoleToolWindow<CR>
+nnoremap <Bslash>h :action HideAllWindows<CR>
+nnoremap <Bslash>i :action GotoImplementation<CR>
+nnoremap <Bslash>l :action ReformatCode<CR>
+nnoremap <Bslash>L :action ShowReformatFileDialog<CR>
+nnoremap <Bslash>n :action ShowNavBar<CR>
+nnoremap <Bslash>o :action ChangeSplitOrientation<CR>
+nnoremap <Bslash>q :action CloseProject<CR>
+nnoremap <Bslash>r :action Refactorings.QuickListPopupAction<CR>
+nnoremap <Bslash>s :action Synchronize<CR>
+nnoremap <Bslash>t :action ActivateTerminalToolWindow<CR>
+nnoremap <Bslash>w :action JumpToLastWindow<CR>
 
-" not working
-nnoremap <C-W>H :action ChangeSplitOrientation<CR>
-nnoremap <C-W>J :action ChangeSplitOrientation<CR>
-nnoremap <C-W>K :action ChangeSplitOrientation<CR>
-nnoremap <C-W>L :action ChangeSplitOrientation<CR>
+" clear search highlighting when hitting backslash twice
+nnoremap <Bslash><Bslash> :nohlsearch<CR>
 
-" not working well
-nnoremap <Space>l :action ReformatCode<CR> " lint
-nnoremap <Space>r :action RefactoringMenu<CR>
-" working????"
-nnoremap <Space>s :action Synchronize<CR>
-
-" clear the search buffer when hitting space twice
-nnoremap <Space><Space> :nohlsearch<CR>
-
-" not working
-" nnoremap g; :action JumpToLastChange<CR>
-" nnoremap g, :action JumpToNextChange<CR>
