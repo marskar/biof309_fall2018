@@ -29,7 +29,7 @@ python nbcreate.py README.md plot.py notes.txt
 Run the following command in your terminal:
     
 ```sh
-jupyter nbconvert raw.ipynb --to notebook --execute --output out.ipynb`
+jupyter nbconvert raw.ipynb --to notebook --execute --output out.ipynb
 ```
 
 You can change `out.ipynb` to a more descriptive filename in the command above.
