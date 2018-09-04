@@ -1,9 +1,11 @@
 import argparse
 import nbformat
 
-parser = argparse.ArgumentParser(description='Create a notebook programmatically')
+parser = argparse.ArgumentParser(
+    description='Create a notebook programmatically.')
 
-parser.add_argument('filenames', metavar='N', type=str, nargs='+', help='A series of filenames')
+parser.add_argument('filenames', metavar='N', type=str,
+                    nargs='+', help='A series of filenames')
 
 args = parser.parse_args()
 filenames = list(args.filenames)
