@@ -8,6 +8,16 @@ Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to g
 
 Check out the rendered examples at [https://marskar.github.io/slides/](https://marskar.github.io/slides/).
 
+I also suggest that you avoid the horrors of Microsoft Office entirely.
+-   Instead of using Microsoft Word & Powerpoint and the doc(x) & ppt(x) formats, write documents and [slideshows] in [Markdown] format and then converted into the desired output format using one of the options below: \> - [Pandoc] \> - [RStudio] (which requires installing the [R programming language][RStudio]) \> - [JupyterLab] (or the classic [Jupyter Notebook])
+-   The document you are reading now is written in [Markdown]!
+-   Instructions for how to turn [Markdown], [R Markdown], and [`ipynb`] files into slides are available [here][slideshows].
+-   Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm], [RStudio] and [JupyterLab] all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data.
+-   Pro-tip 1: You can write [Markdown] in [PyCharm]! Press Ctrl/Cmd+N, then Enter, type out the name of the [Markdown] file (must end in `.md`) you want to create, and press Enter again. You get [Markdown] syntax highlighting and a live preview of your rendered [Markdown]!
+-   Pro-tip 2: If you create a new Python scratch file in [PyCharm] (Press Ctrl/Cmd+Shift+N, then Enter) and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your [Markdown] document! As soon as you take the file out of the Scratches folder, [PyCharm] will treat it like a [Markdown] file again! In short, [PyCharm] will auto-detect the file type based on its extension, but this does not apply to scratch files!
+-   Pro-tip 3: To get automatic python syntax highlighting in your [Markdown] documents on [GitHub] and in [slideshows] created from [Markdown] files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block] in [Markdown].
+-   [Tables that are meant to be displayed in documents] should be in [Markdown] format. For example, the schedule below is a [Markdown][Tables that are meant to be displayed in documents] table.
+
 ## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
 The easiest way to create a slideshow is to write a simple markdown file, like `habits.md`, and use Pandoc to convert it to one of the possible HTML formats.

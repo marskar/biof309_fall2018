@@ -1,5 +1,6 @@
 Syllabus
 ========
+
 **Introduction to Python Programming - BIOF309 - FAES**
 
 **Fall 2018**
@@ -79,55 +80,48 @@ Required Materials
 
 *Programing without a computer would be an exceptional feat.*
 
-For the course, you will need
+Please install the following programs **BEFORE** the first class:
 1. The [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
 
-The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
+    The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
 
 2. The [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/)
 
-The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional version of [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/), the best (in my humble opinion) Python Integrated Development Environment (IDE).
+    The very nice folks at [JetBrains](https://www.jetbrains.com) have given us free licenses for the Professional Edition of [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/), the best (in my humble opinion) Python Integrated Development Environment (IDE).
 
-If you have a .edu email address, please install [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/) Professional using [this link](https://www.jetbrains.com/student/).
+    If you have a .edu email address, please install [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/) Professional using [this link](https://www.jetbrains.com/student/).
 
-If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
+    If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
 
-3. A [UNIX-like system](https://en.wikipedia.org/wiki/Unix-like)
+During the first class, we will set up accounts on:
 
-If you use Windows 10, please try to set up the [Windows subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If you use MacOS or Linux, you are all set.
+1. [DataCamp](https://www.datacamp.com)
 
-4. A [DataCamp](https://www.datacamp.com) account
+    The very nice folks at [DataCamp](https://www.datacamp.com) have given us free 6 month access to their awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
 
-The very nice folks at [DataCamp](https://www.datacamp.com) have given us access to their awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
+    We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
 
-We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
+2. [PluralSight](https://www.pluralsight.com)
 
-5. A [PluralSight](https://www.pluralsight.com) account
+    Thanks to the [DataCamp](https://www.datacamp.com)-[PluralSight](https://www.pluralsight.com) partnership, we can get free 6 month access to Web Development, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
 
-Thanks to the DataCamp-PluralSight partnership, we can get 6 month access to Web Development, Object-Oriented Programming, and Test-Driven Development learning materials on [PluralSight](https://www.pluralsight.com).
+3. [GitHub](https://github.com/)
 
-6. A [GitHub](https://github.com/) account
+    All of the course materials are available on [GitHub](https://github.com/).
+    Before accessing the [course materials repo](https://github.com/marskar/biof309_fall2018), you should know that
+    * it is likely to be under constant development throughout the semester and
+    * you are not expected to work through _everything_ contained therein!
 
-All of the course materials are available on [GitHub](https://github.com/).
-Before accessing the [course materials repo](https://github.com/marskar/biof309_fall2018), you should know that
-* it is likely to be under constant development throughout the semester and
-* you are not expected to work through _everything_ contained therein!
+Optional Materials
+------------------
 
-7. [Pandoc](https://pandoc.org/), [RStudio](https://www.rstudio.com/products/rstudio/download/) (and the [R programming language](https://www.rstudio.com/products/rstudio/download/)), or [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
+1. A [UNIX-like system](https://en.wikipedia.org/wiki/Unix-like)
 
-It is also highly suggest that you avoid the horrors of Microsoft Office.
+    If you use Windows 10, please try to set up the [Windows subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). If you use MacOS or Linux, you are all set.
 
-- Instead of using Microsoft Word & Powerpoint and the doc(x) & ppt(x) formats, write documents and [slideshows](https://marskar.github.io/slides/) in [Markdown](https://www.markdownguide.org/) format and then converted into the desired output format using one of the options below:
-> - [Pandoc](https://pandoc.org/)
-> - [RStudio](https://www.rstudio.com/products/rstudio/download/) (which requires installing the [R programming language](https://www.rstudio.com/products/rstudio/download/))
-> - [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (or the classic [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
-- The document you are reading now is written in [Markdown](https://www.markdownguide.org/)!
-- Instructions for how to turn [Markdown](https://www.markdownguide.org/), [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html), and [`ipynb`](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) files into slides are available [here](https://marskar.github.io/slides/).
-- Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data.
-- Pro-tip 1: You can write [Markdown](https://www.markdownguide.org/) in [PyCharm](https://www.jetbrains.com/pycharm/features/)! Press Ctrl/Cmd+N, then Enter, type out the name of the [Markdown](https://www.markdownguide.org/) file (must end in `.md`) you want to create, and press Enter again. You get [Markdown](https://www.markdownguide.org/) syntax highlighting and a live preview of your rendered [Markdown](https://www.markdownguide.org/)!
-- Pro-tip 2: If you create a new Python scratch file in [PyCharm](https://www.jetbrains.com/pycharm/features/) (Press Ctrl/Cmd+Shift+N, then Enter) and change the extension from `.py` to `.md`, PyCharm will continue to treat the file like a Python script giving you syntax highlighting, code completion, and the ability to run code in your [Markdown](https://www.markdownguide.org/) document! As soon as you take the file out of the Scratches folder, [PyCharm](https://www.jetbrains.com/pycharm/features/) will treat it like a [Markdown](https://www.markdownguide.org/) file again! In short, [PyCharm](https://www.jetbrains.com/pycharm/features/) will auto-detect the file type based on its extension, but this does not apply to scratch files!
-- Pro-tip 3: To get automatic python syntax highlighting in your [Markdown](https://www.markdownguide.org/) documents on [GitHub](https://github.com/) and in [slideshows](https://marskar.github.io/slides/) created from [Markdown](https://www.markdownguide.org/) files, put three backticks (\`) followed by the word "python" above your code and then a new line below your code put another three backticks (\`). This is called a [code block](https://pandoc.org/MANUAL.html#fenced-code-blocks) in [Markdown](https://www.markdownguide.org/).
-- [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) should be in [Markdown](https://www.markdownguide.org/) format. For example, the schedule below is a [Markdown](https://www.markdownguide.org/extended-syntax/#tables) table.
+2. [GitHub student pack](https://education.github.com/pack)
+
+    [GitHub](https://github.com) is offering some free awesome resources to students, that might be of interest to you, depending on your background:
 
 Schedule
 --------
@@ -153,26 +147,26 @@ Schedule
 Homework
 --------
 
-This semester we are continuing our free-from approach to homework assignments. The due dates below are guidelines.
-By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The DataCamp career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick DataCamp if you want to focus on *Data Analysis* and *Machine Learning*. Choose Pluralsight if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
+This semester we are continuing our free-form approach to homework assignments. The due dates below are guidelines.
+By the end of the semester, you must complete at least one career track or at least two skills tracks on [DataCamp](https://www.datacamp.com/tracks/career). The [DataCamp](https://www.datacamp.com) career tracks include the [Python Path on PluralSight](https://www.pluralsight.com/paths/python). Pick [DataCamp](https://www.datacamp.com) if you want to focus on *Data Analysis* and *Machine Learning*. Choose [PluralSight](https://www.pluralsight.com) if are interested in *Object-Oriented Programming* and *Test-Driven Development*.
 
 This will take 28-67 hours total to complete, depending on which you choose to do.
 
-*DataCamp Career Tracks* (complete at least 1):
-- PluralSight Python Path, 30 hours, 8 courses
-- DataCamp Python Programmer, 36 hours, 10 courses
-- DataCamp Data Analyst with Python, 47 hours, 13 Courses
-- DataCamp Data Scientist with Python, 67 hours, 20 Courses
+*[DataCamp](https://www.datacamp.com) Career Tracks* (complete at least 1):
+- [PluralSight Python Path](https://www.pluralsight.com/paths/python), 30 hours, 8 courses
+- [DataCamp Python Programmer](https://www.datacamp.com/tracks/python-programmer), 36 hours, 10 courses
+- [DataCamp Data Analyst with Python](https://www.datacamp.com/tracks/data-analyst-with-python), 47 hours, 13 Courses
+- [DataCamp Data Scientist with Python](https://www.datacamp.com/tracks/data-scientist-with-python), 67 hours, 20 Courses
 
 *DataCamp Skills Tracks* (complete at least 2):
-- Python Programming, 15 hours, 4 courses
-- Importing & Cleaning Data with Python, 13 hours, 4 courses
-- Data Manipulation with Python, 16 hours, 4 courses
-- Machine Learning, 16 hours, 4 courses
+- [Python Programming](https://www.datacamp.com/tracks/python-programming), 15 hours, 4 courses
+- [Importing & Cleaning Data with Python](https://www.datacamp.com/tracks/importing-cleaning-data-with-python), 13 hours, 4 courses
+- [Data Manipulation with Python](https://www.datacamp.com/tracks/data-manipulation-with-python), 16 hours, 4 courses
+- [Machine Learning](https://www.datacamp.com/tracks/machine-learning-with-python), 16 hours, 4 courses
 
-**Please start on your chosen track(s) on DataCamp or PluralSight as soon as possible and work towards the certificate(s) throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
+**Please start on your chosen track(s) on [DataCamp](https://www.datacamp.com) or [PluralSight](https://www.pluralsight.com) as soon as possible and work towards the certificate(s) throughout the semester. This will require substantial work! Do not wait until the end of the semester!**
 
-Please use the schedule below as a guide to which DataCamp and PluralSight chapters/lessons correspond to what is covered in class.
+Please use the schedule below as a guide to which [DataCamp](https://www.datacamp.com) and [PluralSight](https://www.pluralsight.com) chapters/lessons correspond to what is covered in class.
 
 01. DUE September 13, 2018 (BEFORE Class)
     - Install [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
@@ -235,17 +229,12 @@ Depending on your final project, you might find the following topics useful:
 	- [Iterators](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/10-Iterators.ipynb) and [Generators](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/12-Generators.ipynb)
 	- [Regular Expressions](https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/14-Strings-and-Regular-Expressions.ipynb)
 
-Optional Materials
-------------------
-
-[GitHub](https://github.com) is offering some free awesome resources to students, that might be of interest to you, depending on your background: [GitHub student pack](https://education.github.com/pack).
-
 
 Recommended Books
 -----------------
 **There is no required textbook for this course.**
 
-We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython) by Jake Vanderplas. Both of these books are available free on GitHub in Jupyter Notebook form. The code for [Python for Data Analysis](https://github.com/wesm/pydata-book) by Wes McKinney is also on GitHub but the text is only available in the printed copy of the book. For maximum enjoyment, consider working through the relevant chapters before coming to class.
+We do, however, highly recommend [Python for Data Science](https://github.com/jakevdp/PythonDataScienceHandbook) and its companion text [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython) by Jake Vanderplas. Both of these books are available free on [GitHub](https://github.com/) in Jupyter Notebook form. The code for [Python for Data Analysis](https://github.com/wesm/pydata-book) by Wes McKinney is also on [GitHub](https://github.com/) but the text is only available in the printed copy of the book. For maximum enjoyment, consider working through the relevant chapters before coming to class.
 
 We will link to relevant online resources throughout the course.
 
@@ -262,10 +251,11 @@ If you would like additional material on the basics, the following resources may
 For more information about Python, please see the official [Python Software Foundation website](https://www.python.org/).
 
 Grading
------------------------
-The emphasis of the course is on learning and mastering the skills covered. We hope that everyone will be able to complete one of the Python tracks on DataCamp or PluralSight and the final project. If some of the material appears unclear, please ask for clarification.
+-------
 
-Completion of the Python tracks on DataCamp or PluralSight will be graded in a binary manner (completed/incomplete).
+The emphasis of the course is on learning and mastering the skills covered. We hope that everyone will be able to complete one of the Python tracks on [DataCamp](https://www.datacamp.com) or [PluralSight](https://www.pluralsight.com) and submit a final project via [GitHub](https://github.com/). If some of the material appears unclear, please ask for clarification.
+
+Completion of the Python tracks on [DataCamp](https://www.datacamp.com) or [PluralSight](https://www.pluralsight.com) will be graded in a binary manner (completed/incomplete).
 
 Grading the __final project__ will be done using the following rubric:
 
