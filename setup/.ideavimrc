@@ -89,13 +89,15 @@ nnoremap <Bslash>a :action SelectAllOccurrences<CR>
 nnoremap <Bslash>b :action ShowBookmarks<CR>
 nnoremap <Bslash>c :action ActivatePythonConsoleToolWindow<CR>
 nnoremap <Bslash>d :action ActivateDatabaseToolWindow<CR>
-nnoremap <Bslash>e :action ActivateEventLogToolWindow<CR>
+nnoremap <Bslash>e :action RenameElement<CR>
+nnoremap <Bslash>f :action RenameFile<CR>
 nnoremap <Bslash>h :action HideAllWindows<CR>
 nnoremap <Bslash>i :action GotoImplementation<CR>
 nnoremap <Bslash>l :action ReformatCode<CR>
 nnoremap <Bslash>L :action ShowReformatFileDialog<CR>
 nnoremap <Bslash>n :action ShowNavBar<CR>
 nnoremap <Bslash>o :action ChangeSplitOrientation<CR>
+nnoremap <Bslash>p :action RenameProject<CR>
 nnoremap <Bslash>q :action CloseProject<CR>
 nnoremap <Bslash>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Bslash>s :action ActivateSciViewToolWindow<CR>
@@ -103,6 +105,7 @@ nnoremap <Bslash>t :action ActivateTerminalToolWindow<CR>
 nnoremap <Bslash>u :action Synchronize<CR>
 nnoremap <Bslash>v :action Vcs.QuickListPopupAction<CR>
 nnoremap <Bslash>w :action JumpToLastWindow<CR>
+nnoremap <Bslash>x :action ReopenClosedTab<CR>
 
 " clear search highlighting when hitting backslash twice
 nnoremap <Bslash><Bslash> :nohlsearch<CR>
