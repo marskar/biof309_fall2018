@@ -4,6 +4,8 @@ The goal of this tutorial is to demonstrate how to make HTML slidedecks that can
 
 Instructions for how to turn [Markdown](https://www.markdownguide.org/) (`.md`), [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html) (`.Rmd`), and [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) (`.ipynb`) files into slides are detailed below.
 
+Check out the rendered examples at [https://marskar.github.io/slides/](https://marskar.github.io/slides/).
+
 One major advantage of HTML slidedecks is that you can host them on GitHub for free and share a url, instead of resorting to email or transferring files using USB drives.
 
 Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to generate slides programmatically using the steps below.
