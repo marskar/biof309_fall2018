@@ -10,8 +10,8 @@ Instead of using Powerpoint, Keynote, or Google Slides, I recommend you try to g
 
 Speaking of Powerpoint, I suggest that you avoid the horrors of Microsoft Office entirely.
 - Instead of using Microsoft Word & Powerpoint and the doc(x) & ppt(x) formats, write documents and [slideshows](https://marskar.github.io/slides/) in [Markdown](https://www.markdownguide.org/) format and then converted into the desired output format using one of the three options below:
-    1. [Pandoc](https://pandoc.org/) and [Pypandoc](https://github.com/bebraw/pypandoc)
-    2. [RStudio](https://www.rstudio.com/products/rstudio/download/) (which requires installing the [R programming language](https://www.rstudio.com/products/rstudio/download/))
+    1. [Pandoc](https://pandoc.org/) or [Pypandoc](https://github.com/bebraw/pypandoc) (recommended for users of the [Python programming language](https://www.python.org/) and those comfortable using the [command line](https://en.wikipedia.org/wiki/Command-line_interface))
+    2. [RStudio](https://www.rstudio.com/products/rstudio/download/) (recommended for users of the [R programming language](https://www.r-project.org/))
     3. [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (or the classic [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
 - Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data. [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) can also be written in [Markdown](https://www.markdownguide.org/) format instead of in Excel.
 
