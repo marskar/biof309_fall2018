@@ -2,7 +2,7 @@
 
 The goal of this tutorial is to demonstrate how to make HTML slidedecks that can be put on the web.
 
-Instructions for how to turn [Markdown ](https://www.markdownguide.org/) (`.md`), [R Markdown ](https://rmarkdown.rstudio.com/lesson-1.html) (`.Rmd`), and [Jupyter Notebook ](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) (`ipynb`) files into slides are detailed below.
+Instructions for how to turn [Markdown](https://www.markdownguide.org/) (`.md`), [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html) (`.Rmd`), and [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/user/notebook.html) (`ipynb`) files into slides are detailed below.
 
 By the way, the document you are reading now is written in [Markdown](https://www.markdownguide.org/)!
 
@@ -17,8 +17,7 @@ Speaking of Powerpoint, I suggest that you avoid the horrors of Microsoft Office
     1. [Pandoc](https://pandoc.org/) and [Pypandoc](https://github.com/bebraw/pypandoc)
     2. [RStudio](https://www.rstudio.com/products/rstudio/download/) (which requires installing the [R programming language](https://www.rstudio.com/products/rstudio/download/))
     3. [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) (or the classic [Jupyter Notebook](https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html))
-- Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data.
-- [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) can also be written in [Markdown](https://www.markdownguide.org/) format instead of in Excel.
+- Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data. [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) can also be written in [Markdown](https://www.markdownguide.org/) format instead of in Excel.
 
 ## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) and [Pypandoc](https://github.com/bebraw/pypandoc)
 
