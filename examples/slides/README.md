@@ -20,7 +20,7 @@ Speaking of Powerpoint, I suggest that you avoid the horrors of Microsoft Office
 - Instead of using Microsoft Excel and the xls(x) format, save tabular data as comma-separated value (csv) files. [PyCharm](https://www.jetbrains.com/pycharm/features/), [RStudio](https://www.rstudio.com/products/rstudio/download/) and [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) all have csv viewers. These csv viewers are better options for looking at data than Excel, because they do not have the ability to edit or auto-format your raw data.
 - [Tables that are meant to be displayed in documents](https://www.markdownguide.org/extended-syntax/#tables) can also be written in [Markdown](https://www.markdownguide.org/) format instead of in Excel.
 
-## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
+## Create HTML slides from markdown (md) using [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) and [Pypandoc](https://github.com/bebraw/pypandoc)
 
 The easiest way to create a slideshow is to write a simple markdown file, like `habits.md`, and use [Pandoc](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc) to convert it to one of the possible HTML formats.
 
