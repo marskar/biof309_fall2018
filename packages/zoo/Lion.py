@@ -1,4 +1,4 @@
-from zoo import Animal
+from . import Animal
 from datetime import datetime
 class Lion(Animal):
     def __init__(self, name, species = "Pantera leo", last_fed = datetime.now()):

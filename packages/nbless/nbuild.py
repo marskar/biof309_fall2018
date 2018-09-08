@@ -2,7 +2,9 @@ import nbformat
 from typing import List
 
 
-def nbuild(filenames: List, output_name: str, output_path: str = './') -> None:
+def nbuild(filenames: List,
+           output_name: str = "raw.ipynb",
+           output_path: str = './') -> None:
 
     def read_file(filename):
         with open(filename) as f:
@@ -20,7 +22,7 @@ def nbuild(filenames: List, output_name: str, output_path: str = './') -> None:
     if not output_path.endswith('/'):
         output_path += '/'
 
-    nbformat.write(nb, output_path + output_name)
+    nbformat.write(nb, output_path+output_name)
 
 
 if __name__ == "__main__":

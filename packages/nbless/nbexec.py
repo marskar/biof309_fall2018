@@ -2,7 +2,9 @@ import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
 
-def nbexec(input_name: str, output_name: str, output_path: str = './') -> None:
+def nbexec(input_name: str,
+           output_name: str = 'output.ipynb',
+           output_path: str = './') -> None:
 
     with open(input_name) as f:
         nb = nbformat.read(f, as_version=4)
@@ -14,7 +16,7 @@ def nbexec(input_name: str, output_name: str, output_path: str = './') -> None:
     if not output_path.endswith('/'):
         output_path += '/'
 
-    with open(output_path + output_name, 'wt') as f:
+    with open(output_path+output_name, 'wt') as f:
         nbformat.write(nb, f)
 
 

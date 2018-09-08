@@ -1,4 +1,5 @@
 from os import makedirs
+from typing import List
 
 
 def make_folders(names: List[str]) -> str:
