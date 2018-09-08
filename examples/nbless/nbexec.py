@@ -8,7 +8,7 @@ def nbexec(input_name: str, output_name: str, output_path: str = './') -> None:
 
     ep = ExecutePreprocessor()
 
-    ep.preprocess(nb, {'metadata': {'path': filepath}})
+    ep.preprocess(nb, {'metadata': {'path': output_path}})
 
     if not output_path.endswith('/'):
         output_path += '/'
@@ -34,3 +34,7 @@ if __name__ == "__main__":
     input_name = args.source
     output_name = args.out
     output_path = args.path
+
+    nbexec(input_name=input_name,
+           output_name=output_name,
+           output_path=output_path)

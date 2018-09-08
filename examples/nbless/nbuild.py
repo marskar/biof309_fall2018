@@ -43,3 +43,6 @@ if __name__ == "__main__":
     output_name = args.out
     output_path = args.path
 
+    nbuild(filenames=filenames,
+           output_name=output_name,
+           output_path=output_path)

@@ -95,6 +95,7 @@ nnoremap <Bslash>h :action HideAllWindows<CR>
 nnoremap <Bslash>i :action GotoImplementation<CR>
 nnoremap <Bslash>l :action ReformatCode<CR>
 nnoremap <Bslash>L :action ShowReformatFileDialog<CR>
+nnoremap <Bslash>m :action Move<CR>
 nnoremap <Bslash>n :action ShowNavBar<CR>
 nnoremap <Bslash>o :action ChangeSplitOrientation<CR>
 nnoremap <Bslash>p :action RenameProject<CR>
