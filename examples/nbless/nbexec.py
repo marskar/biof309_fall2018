@@ -1,6 +1,7 @@
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
+
 def nbexec(input_name: str, output_name: str, output_path: str = './') -> None:
 
     with open(input_name) as f:
@@ -31,10 +32,10 @@ if __name__ == "__main__":
                         help='The filepath where the output notebook is saved.')
 
     args = parser.parse_args()
-    input_name = args.source
-    output_name = args.out
-    output_path = args.path
+    in_name = args.source
+    out_name = args.out
+    out_path = args.path
 
-    nbexec(input_name=input_name,
-           output_name=output_name,
-           output_path=output_path)
+    nbexec(input_name=in_name,
+           output_name=out_name,
+           output_path=out_path)

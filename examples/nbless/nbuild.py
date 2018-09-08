@@ -4,11 +4,9 @@ from typing import List
 
 def nbuild(filenames: List, output_name: str, output_path: str = './') -> None:
 
-
     def read_file(filename):
         with open(filename) as f:
             return f.read()
-
 
     nb = nbformat.v4.new_notebook()
     md_cell = nbformat.v4.new_markdown_cell
@@ -23,6 +21,7 @@ def nbuild(filenames: List, output_name: str, output_path: str = './') -> None:
         output_path += '/'
 
     nbformat.write(nb, output_path + output_name)
+
 
 if __name__ == "__main__":
     import argparse
@@ -39,10 +38,10 @@ if __name__ == "__main__":
                         help='The path where the output notebook is saved.')
 
     args = parser.parse_args()
-    filenames = args.names
-    output_name = args.out
-    output_path = args.path
+    names = args.names
+    out_name = args.out
+    out_path = args.path
 
-    nbuild(filenames=filenames,
-           output_name=output_name,
-           output_path=output_path)
+    nbuild(filenames=names,
+           output_name=out_name,
+           output_path=out_path)
