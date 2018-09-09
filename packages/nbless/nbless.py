@@ -1,10 +1,11 @@
 from typing import List
-from . import nbuild, nbexec
+from packages.nbless.nbuild import nbuild
+from packages.nbless.nbexec import nbexec
 
 def nbless(filenames: List,
            nbuild_name: str = 'raw.ipynb',
            nbuild_path: str = './',
-           nbexec_name: str = 'output.ipynb',
+           nbexec_name: str = 'out.ipynb',
            nbexec_path: str = './') -> None:
 
     nbuild(filenames=filenames,
@@ -26,20 +27,22 @@ if __name__ == "__main__":
 
     parser.add_argument('names', nargs='+', help='A series of filenames.')
 
+    parser.add_argument('--raw', '-r', default='raw.ipynb',
+                       help='The filename of the unexecuted output notebook.')
+
     parser.add_argument('--out', '-o', default='raw.ipynb',
-                       help='The filename of the output notebook.')
+                        help='The filename of the executed output notebook.')
 
     parser.add_argument('--path', '-p', default='./',
-                       help='The path where the output notebook is saved.')
+                       help='The path where the notebooks will be saved.')
 
     args = parser.parse_args()
     names = args.names
+    raw_name = args.raw
     out_name = args.out
     out_path = args.path
 
-    nbuild(filenames=names,
-           output_name=out_name,
-           output_path=out_path)
-    nbexec(input_name=out_path,
-           output_name=nbexec_name,
-           output_path=nbexec_path)
+    nbless(nbuild_name=names,
+           nbuild_path=out_path,
+           nbexec_name=out_name,
+           nbexec_path=out_path)

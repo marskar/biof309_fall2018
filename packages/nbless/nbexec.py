@@ -3,7 +3,7 @@ from nbconvert.preprocessors import ExecutePreprocessor
 
 
 def nbexec(input_name: str,
-           output_name: str = 'output.ipynb',
+           output_name: str = 'out.ipynb',
            output_path: str = './') -> None:
 
     with open(input_name) as f:
@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     parser.add_argument('source', help='The filename of the input notebook.')
 
-    parser.add_argument('--out', '-o', default='output.ipynb',
+    parser.add_argument('--out', '-o', default='out.ipynb',
                         help='The filename of the output notebook.')
 
     parser.add_argument('--path', '-p', default='.',
