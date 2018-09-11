@@ -81,7 +81,7 @@ Required Materials
 *Programing without a computer would be an exceptional feat.*
 
 Please install the following programs **BEFORE** the first class:
-1. The [Anaconda Scientific Python Distribution](https://www.continuum.io/downloads)
+1. The [Anaconda Scientific Python Distribution](https://www.anaconda.com/download/)
 
     The Anaconda installer will automatically install most of the software we will use during the course, including [Jupyter Notebooks](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/What%20is%20the%20Jupyter%20Notebook.html).
 
