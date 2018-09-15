@@ -4,7 +4,7 @@ from pydy import pydy
 def say_hi():
     print("Hi!")
 
-say_hi()
+say_hi() # this should work
 
 pydy(['say_hi'])
 
