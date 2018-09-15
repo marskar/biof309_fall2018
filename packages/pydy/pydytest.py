@@ -6,7 +6,7 @@ def say_hi():
 
 say_hi() # this should work
 
-pydy(['say_hi'])
+pydy(['say_hi']) # this will remove functions from global namespace
 
 say_hi() # this will not work
 
