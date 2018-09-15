@@ -48,13 +48,15 @@ def weekly(start: Union[int, str],
     def parse_date(date_str):
         return datetime.strptime(keep_digits(date_str), input_format).date()
 
-    if any(isinstance(x, (str, int)) for x in (start, end)):
+    if any(type(x) in (str, int) for x in (start, end)):
         start, end = map(parse_date, [str(start), str(end)])
     day_range = range(int((end - start).days) + 1)
 
-    if isinstance(weekdays, (str, int)):
+    if type(weekdays) in (str, int):
         weekdays = [int(x) for x in list(keep_digits(str(weekdays)))]
 
     return [(start + timedelta(days=i)).strftime(output_format)
             for i in day_range
             if (start + timedelta(days=i)).weekday() in weekdays]
+
+weekly(start = 20180913, end = 20180917, weekdays = 1234560)
