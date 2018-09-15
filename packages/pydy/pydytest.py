@@ -8,6 +8,6 @@ say_hi()
 
 pydy(['say_hi'])
 
-say_hi()
+say_hi() # this will not work
 
-pd.DataFrame.say_hi()
+pd.DataFrame.say_hi() # this should work
