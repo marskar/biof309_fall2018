@@ -98,7 +98,7 @@ nnoremap <Bslash>L :action ShowReformatFileDialog<CR>
 nnoremap <Bslash>m :action Move<CR>
 nnoremap <Bslash>n :action ShowNavBar<CR>
 nnoremap <Bslash>o :action ChangeSplitOrientation<CR>
-nnoremap <Bslash>p :action RenameProject<CR>
+nnoremap <Bslash>p :action NewDirectoryProject<CR>
 nnoremap <Bslash>q :action CloseProject<CR>
 nnoremap <Bslash>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Bslash>s :action ActivateSciViewToolWindow<CR>
