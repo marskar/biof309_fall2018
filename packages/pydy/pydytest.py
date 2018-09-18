@@ -1,5 +1,5 @@
 import pandas as pd
-from pydy import pydy
+import pydy
 
 def say_hi():
     print("Hi!")
