@@ -11,6 +11,7 @@ one, two, three = [x+1 for x in range(3)]
 about_me = 'Martin', 'Skarzynski', 1985, 'Warsaw', 'Poland'
 firstname, lastname, birthyear, birthcity, birthcountry = about_me
 first, last, *birth = about_me
+first, last, *birth, nationality = about_me
 
 # swap two variables
 a = 'a'
