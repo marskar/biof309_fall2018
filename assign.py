@@ -19,8 +19,7 @@ a, b, c = 'a', 'b', 'c'
 a, b, c = 'abc'
 
 # swap two variables
-a = 'a'
-b = 'b'
+a, b = 'a', 'b'
 a, b = b, a
 a, b
 
