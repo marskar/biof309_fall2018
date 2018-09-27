@@ -7,6 +7,7 @@ Zumba
 
 # Fun Fact
 I speak 4 natural languages 
+
 - English,
 - Spanish,
 - Polish, and 
