@@ -1,6 +1,6 @@
 # Demonstrate logistic regression
 from sklearn.datasets import load_digits
-#from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, accuracy_score
 from matplotlib import pyplot as plt
@@ -16,13 +16,10 @@ target = digits['target']
 
 data.shape
 
-# train-test-split
-y_train, y_test = target[:1500], target[1500:]
-x_train, x_test = data[:1500], data[1500:]
 
 # Or this is better
-#x_train, x_test, y_train, y_test = train_test_split(
-#    data, target, train_size=1500/1797, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(
+    data, target, train_size=1500/1797, random_state=42)
 
 
 # model

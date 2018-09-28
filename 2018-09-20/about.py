@@ -9,7 +9,7 @@ x = 2
 y = x = 5
 # assign multiple variables at once
 z = 1, 2, 3 # z is a tuple, this is a sequence of values
-one, two, three = z
+one, two, three = 1, 2, 3
 # to change a word, cw
 # to change everything to the right, C
 # to replace one character, hit r and then the replacement character
@@ -30,3 +30,6 @@ help(range)
 # check the type
 # types we use today: int, str, float, list, tuple
 type(5.)
+
+
+[chr(65+i) for i in range(26)]
