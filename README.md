@@ -129,10 +129,10 @@ Schedule
 | #  | Date       | Title                                        | Lead              |
 |----|------------|----------------------------------------------|-------------------|
 | 1  | 2018-09-13 | Integrated Development Environments          | Martin            |
-| 2  | 2018-09-20 | Python Basics                                | All Instructors   |
-| 3  | 2018-09-27 | Functions, Modules and Packages              | All Instructors   |
-| 4  | 2018-10-04 | Loops and Conditionals                       | Liuping           |
-| 5  | 2018-10-11 | Biopython and Sequences                      | Martin            |
+| 2  | 2018-09-20 | Python Basics                                | Martin            |
+| 3  | 2018-09-27 | Functions, Modules, and Packages             | Martin            |
+| 4  | 2018-10-04 | Loops                                        | Martin            |
+| 5  | 2018-10-11 | Booleans and Conditionals                    | Liuping           |
 | 6  | 2018-10-18 | NumPy and Arrays                             | Liuping & Michael |
 | 7  | 2018-10-25 | Pandas and DataFrames                        | Michael           |
 | 8  | 2018-11-01 | Machine Learning                             | Martin            |
