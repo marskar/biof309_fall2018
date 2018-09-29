@@ -1,7 +1,7 @@
 # change keyboard settings 
-# Key Repeat: Fast
-# Delay Until Repeat: Short
-# Caps Lock Key: Escape
+## Key Repeat: Fast
+## Delay Until Repeat: Short
+## Caps Lock Key: Escape
 # Remove most icons from Dock
 # Add Documents in between Applications and Download in Dock
 # Turn Dock Hiding on
