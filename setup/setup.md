@@ -29,6 +29,7 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 
 # install Fira Code Nerdfont
 brew tap caskroom/fonts
+
 brew cask install font-firacode-nerd-font
 
 # In terminal, set Default background to black, text to white, and select Fira Code size 18
@@ -43,6 +44,7 @@ brew install neovim
 
 # move init.vim to ~/.config/nvim/
 mkdir .config/
+
 mkdir .config/nvim
 
 
