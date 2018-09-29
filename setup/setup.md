@@ -4,6 +4,8 @@
 # Caps Lock Key: Escape
 # Remove most icons from Dock
 # Add Documents in between Applications and Download in Dock
+# Turn Dock Hiding on
+# Under General > Appearance select Use Dark menu bar and Dock and Automatically hide and show the menu bar
 
 # Install homebrew (this also installs xcode tools needed for git)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
