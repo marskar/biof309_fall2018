@@ -1,11 +1,11 @@
-# change keyboard settings 
+# Change System Preferences > Keyboard > Keyboard 
 ## Key Repeat: Fast
 ## Delay Until Repeat: Short
 ## Caps Lock Key: Escape
 # Remove most icons from Dock
-# Add Documents in between Applications and Download in Dock
-# Turn Dock Hiding on
-# Under General > Appearance select Use Dark menu bar and Dock and Automatically hide and show the menu bar
+# Drag and Drop Documents from Finder to the Dock in between Applications and Download
+# 2-finger click on Dock and Turn Dock Hiding On
+# Under General > Appearance select 'Use Dark menu bar and Dock' and 'Automatically hide and show the menu bar'
 
 # Install homebrew (this also installs xcode tools needed for git)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -29,6 +29,9 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## Select MacOS X 10.5+ Keymap and add Hide All Tool Windows shortcut: Cmd+0
 ## In Appearance & Behavior > Appearance, Use Dark Window headers and select Fura Code Nerd Font size 18
 ## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
+## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
+## Check Show Whitespace in Editor > General > Appearance
+## Check Use tab character in Editor > Code Style > Tabs and Indents
 
 # move .gitconfig, .ideavimrc, and .vimrc to ~
 
@@ -37,12 +40,12 @@ brew tap caskroom/fonts
 
 brew cask install font-firacode-nerd-font
 
-# In terminal, set Default background to black, text to white, and select Fira Code size 18
+# In terminal, set Default background to black, text to white, and select Fura Code Nerdfont size 18
 
 # install iterm2
 brew cask install iterm2
 
-# In iterm2, select Fira Code size 18 in Profiles > Text > Change Font and check Use Ligatures
+# In iterm2, select Fura Code Nerdfont size 18 in Profiles > Text > Change Font and check Use Ligatures
 
 # install neovim
 brew install neovim
