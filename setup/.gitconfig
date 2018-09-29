@@ -1,0 +1,162 @@
+    # core {{{
+    [core]
+        editor = /usr/bin/vim
+        excludesfile = /Users/np/.gitignore_global
+        pager=less -x4
+
+    #}}}
+    # user {{{
+    [user]
+        email = marskar@gmail.com
+        name = Martin Skarzynski
+    #}}}
+
+    # color {{{
+    [color]
+        branch = auto
+        diff = auto
+        status = auto
+
+    [color "branch"]
+        current = red reverse
+        local = blue
+        remote = green
+
+    [color "diff"]
+        meta = yellow
+        frag = magenta
+        old = red bold
+        new = green
+        plain = white
+
+    [color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
+
+    # }}}
+    # push/pull/diff/options {{{
+    [push]
+        default = current
+    [pull]
+        default = current
+    [diff]
+        mnemonicprefix = true
+    [branch]
+        autosetuprebase = always
+    [apply]
+        whitespace = nowarn
+
+    #}}}
+    # alias {{{
+    [alias]
+        # add {{{
+        a = !git add . && git status
+        aa = !git add . && git add -u . && git status
+        ac = !git add . && git commit
+        ai = add --interactive
+        au = !git add -u . && git status
+        #acm = !git add . && git commit -m
+        # git acm message without quotes
+        acm = "!f() { git add . && git commit -m \"$(echo $@)\"; }; f";
+        #}}}
+        # alias {{{
+        # list all aliases
+        alias = config --get-regexp ^alias\\.
+        aliases = "!git config -l | grep alias | cut -c 7-"
+        #}}}
+        # branch {{{
+        b = branch
+        bra = branch -ra
+        #}}}
+        # checkout {{{
+        co = checkout
+        com = checkout master
+        coh = checkout HEAD
+        #}}}
+        # cherry-pick {{{
+        cp = cherry-pick
+        #}}}
+        # clone {{{
+        cloner = clone --recursive
+        #}}}
+        # commit {{{
+        c = commit
+        cm = commit -m
+        ca = commit --all
+        cam = commit --all -m
+        caa = commit --all --amend
+        caam = commit --all --amend -m
+        amend = commit --amend --reuse-message=HEAD
+        amendm = commit --amend -m
+        #}}}
+        # diff {{{
+        d = diff --color-words
+        dh = diff --color-words HEAD^
+        dw = diff --word-diff
+        dc = diff --cached
+        # diff last commit
+        dch = diff --cached HEAD^
+        dr  = "!f() { git diff -w "$1"^.."$1"; }; f"
+        diffr  = "!f() { git diff "$1"^.."$1"; }; f"
+        #}}}
+        # log {{{
+        l = log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate
+        ld = log --pretty=format:\"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]\" --decorate --date=short
+        lf = log --name-status --oneline
+        lt = log --graph --decorate --pretty=oneline --abbrev-commit
+        ll = log --stat --abbrev-commit
+        lld = log --stat --abbrev-commit --date=short
+        llt = log --graph --decorate --pretty=oneline --abbrev-commit
+        ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        lc  = "!f() { git ll "$1"^.."$1"; }; f"
+        lnc = log --pretty=format:"%h\\ %s\\ [%cn]"
+        lu = log -u
+        #}}}
+        # remote commands {{{
+        url = remote -v
+        #}}}
+        # reset commands {{{
+        r = reset
+        r1 = reset HEAD^
+        r2 = reset HEAD^^
+        rh = reset --hard
+        rh1 = reset HEAD^ --hard
+        rh2 = reset HEAD^^ --hard
+        # }}}
+        # stash {{{
+        sl = stash list
+        sa = stash apply
+        ss = stash save
+        # }}}
+        # status {{{
+        s = status
+        # }}}
+        # svn (Bidirectional operation between a Subversion repository and Git) {{{
+        svnr = svn rebase
+        svnd = svn dcommit
+        svnl = svn log --oneline --show-commit
+        # }}}
+        # various useful {{{
+        # last tag created
+        lasttag = describe --tags --abbrev=0
+        lt = describe --tags --abbrev=0
+        # conflict/merges
+        ours = "!f() { git co --ours $@ && git add $@; }; f"
+        theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+        #}}}
+
+        # worktree {{{
+        w = worktree
+        wl = worktree list
+        # }}}
+    # }}}
+    [rerere]
+      enabled = false
+    [rebase]
+      autosquash = true
+    [filter "lfs"]
+    	clean = git-lfs clean %f
+    	smudge = git-lfs smudge %f
+    	required = true
