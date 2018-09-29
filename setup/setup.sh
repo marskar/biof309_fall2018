@@ -31,10 +31,12 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 brew tap caskroom/fonts
 brew cask install font-firacode-nerd-font
 
-# set background to black, text to white, and select Fira Code size 18 in Pro
+# In terminal, set Default background to black, text to white, and select Fira Code size 18
 
 # install iterm2
 brew cask install iterm2
+
+# In iterm2, select Fira Code size 18 in Profiles > Text > Change Font and check Use Ligatures
 
 # install neovim
 brew install neovim
