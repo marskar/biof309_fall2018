@@ -26,6 +26,9 @@ brew cask install flycut
 bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 
 # install PyCharm: no command line installer (only on Ubuntu using snap)
+## Select MacOS X 10.5+ Keymap and add Hide All Tool Windows shortcut: Cmd+0
+## In Appearance & Behavior > Appearance, Use Dark Window headers and select Fura Code Nerd Font size 18
+## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
 
 # move .gitconfig, .ideavimrc, and .vimrc to ~
 
