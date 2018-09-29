@@ -1,0 +1,44 @@
+set nolaunchbell
+
+set cursorline
+set history=100
+set undolevels=100
+
+" exrc for wasavi
+" Themes:
+"   - blight
+"   - charcoal
+"   - matrix
+"   - solarized
+"   - solarized_dark
+""
+set theme=charcoal
+
+set bellvolume=0
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Underline the line the cursor is on
+set cursorline
+
+" use hybrid (absolute and relative) numbers
+set number relativenumber
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases 
+set smartcase
+
+
+" Makes search act like search in modern browsers
+set incsearch 
+
+" Show matching brackets when text indicator is over them
+set showmatch 
+
+" No annoying sound on errors http://vim.wikia.com/wiki/Disable_beeping
+set noerrorbells
+set novisualbell
