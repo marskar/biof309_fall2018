@@ -5,7 +5,7 @@
 # Remove most icons from Dock
 # Add Documents in between Applications and Download in Dock
 
-# Install homebrew
+# Install homebrew (this also installs xcode tools needed for git)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install chrome
@@ -31,12 +31,12 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 brew tap caskroom/fonts
 brew cask install font-firacode-nerd-font
 
-# set background to black and select Fira Code size 18 in Pro
+# set background to black, text to white, and select Fira Code size 18 in Pro
 
 # install iterm2
 brew cask install iterm2
 
-# install eeovim
+# install neovim
 brew install neovim
 
 # move init.vim to ~/.config/nvim/
