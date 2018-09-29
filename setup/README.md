@@ -31,7 +31,6 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
 ## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
 ## Check Show Whitespace in Editor > General > Appearance
-## Check Use tab character in Editor > Code Style > Tabs and Indents
 
 # move .gitconfig, .ideavimrc, and .vimrc to ~
 
