@@ -25,7 +25,7 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 
 # install PyCharm: no command line installer (only on Ubuntu using snap)
 
-# move .ideavimrc and .vimrc to ~
+# move .gitconfig, .ideavimrc, and .vimrc to ~
 
 # install Fira Code Nerdfont
 brew tap caskroom/fonts
