@@ -32,6 +32,8 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
 ## Check Show Whitespace in Editor > General > Appearance
 ## If you use the Deep Ocean Editor theme from the [Material UI](https://www.material-theme.com/) plugin, change docstring color to [`30B000`](https://www.beautycolorcode.com/30b000)
+## Install [BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport) plugin
+## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
 
 # move .gitconfig, .ideavimrc, and .vimrc to ~
 
@@ -67,5 +69,5 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# rstudio
+# rstudio (not working for me right now)
 conda install -y rstudio
