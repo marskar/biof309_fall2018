@@ -9,7 +9,7 @@
 ## Add Home to to Finder sidebar
 ## Under General > Appearance select 'Use Dark menu bar and Dock' and 'Automatically hide and show the menu bar'
 
-## Install Karabiner-Elements
+# Install Karabiner-Elements
 https://pqrs.org/osx/karabiner/
 ### Under Complex modifications > Rules > Add Rule (Modifier Keys > Change caps_lock key (rev 2) > Change caps_lock to control if pressed with other keys, to escape if pressed alone.)
 
