@@ -9,6 +9,10 @@
 ## Add Home to to Finder sidebar
 ## Under General > Appearance select 'Use Dark menu bar and Dock' and 'Automatically hide and show the menu bar'
 
+## Install Karabiner-Elements
+https://pqrs.org/osx/karabiner/
+### Under Complex modifications > Rules > Add Rule (Modifier Keys > Change caps_lock key (rev 2) > Change caps_lock to control if pressed with other keys, to escape if pressed alone.)
+
 # Mac Terminal 
 ## Install homebrew (this also installs xcode tools needed for git)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -18,6 +22,7 @@ brew install neovim
 
 ## Install zsh
 brew install zsh
+
 
 ## Install Fira Code Nerdfont
 brew tap caskroom/fonts
