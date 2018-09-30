@@ -11,7 +11,7 @@
 
 # Install Karabiner-Elements from homepage dmg
 https://pqrs.org/osx/karabiner/
-### Could also try `brew cask install karabiner-elements`
+### Could also try `brew cask install karabiner-elements` if version is the same
 ### Under Complex modifications > Rules > Add Rule (Modifier Keys > Change caps_lock key (rev 2) > Change caps_lock to control if pressed with other keys, to escape if pressed alone.)
 
 # Mac Terminal 
