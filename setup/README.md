@@ -31,6 +31,7 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
 ## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
 ## Check Show Whitespace in Editor > General > Appearance
+## If you use the Deep Ocean Editor theme from the [Material UI](https://www.material-theme.com/) plugin, change docstring color to [`30B000`](https://www.beautycolorcode.com/30b000)
 
 # move .gitconfig, .ideavimrc, and .vimrc to ~
 
