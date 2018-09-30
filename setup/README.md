@@ -78,5 +78,5 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## Install [BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport) plugin
 ## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
 
-# rstudio and `r-essentials` (rstudio is not working for me right now)
+## Install RStudio and `r-essentials` (RStudio is not working for me right now)
 conda install -y rstudio
