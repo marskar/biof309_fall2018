@@ -43,7 +43,7 @@ brew cask install shiftit
 ## Install flycut
 brew cask install flycut
 
-## Move [.gitconfig](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.gitconfig), [.ideavimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.ideavimrc), [.pypirc](https://github.com/marskar/biof309_fall2018/blob/master/setup/.pypirc), and [.vimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.vimrc) to ~ and restart terminal
+## Move [.gitconfig](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.gitconfig), [.ideavimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.ideavimrc), [.pypirc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.pypirc), and [.vimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.vimrc) to ~ and change password in `.pypirc`
 
 ## Move [init.vim](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/init.vim) to ~/.config/nvim/
 mkdir .config/
