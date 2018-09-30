@@ -1,65 +1,53 @@
-# Change System Preferences > Keyboard > Keyboard 
+# Mac System Preferences
+# In System Preferences > Keyboard > Keyboard 
 ## Key Repeat: Fast
 ## Delay Until Repeat: Short
 ## Caps Lock Key: Escape
 # Remove most icons from Dock
 # Drag and Drop Documents from Finder to the Dock in between Applications and Download
 # 2-finger click on Dock and Turn Dock Hiding On
+# Add Home to to Finder sidebar
 # Under General > Appearance select 'Use Dark menu bar and Dock' and 'Automatically hide and show the menu bar'
 
-# Install homebrew (this also installs xcode tools needed for git)
+# Mac Terminal 
+## Install homebrew (this also installs xcode tools needed for git)
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# install chrome
+## Install chrome
 brew cask install google-chrome
 
-# install keycastr
+## Install keycastr
 brew cask install keycastr
 
-# install shiftit
+## Install shiftit
 brew cask install shiftit
 
-# install flycut
+## Install flycut
 brew cask install flycut
 
-# install Anaconda: this includes vs code text editor
-bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
+## Move .gitconfig, .ideavimrc, and .vimrc to ~
 
-# install PyCharm: no command line installer (only on Ubuntu using snap)
-## Select MacOS X 10.5+ Keymap and add Hide All Tool Windows shortcut: Cmd+0 and Save As...: Cmd+Shift+S
-## In Appearance & Behavior > Appearance, Use Dark Window headers and select Fura Code Nerd Font size 18
-## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
-## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
-## Check Show Whitespace in Editor > General > Appearance
-## If you use the Deep Ocean Editor theme from the [Material UI](https://www.material-theme.com/) plugin, change docstring color to [`30B000`](https://www.beautycolorcode.com/30b000)
-## Install [IdeaVim](https://github.com/JetBrains/ideavim) plugin
-## Install [BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport) plugin
-## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
-
-# move .gitconfig, .ideavimrc, and .vimrc to ~
-
-# install Fira Code Nerdfont
+## Install Fira Code Nerdfont
 brew tap caskroom/fonts
 
 brew cask install font-firacode-nerd-font
 
-# In terminal, set Default background to black, text to white, and select Fura Code Nerdfont size 18
+## In terminal, set Default background to black, text to white, and select Fura Code Nerdfont size 18
 
-# install iterm2
+## install iterm2
 brew cask install iterm2
 
-# In iterm2, select Fura Code Nerdfont size 18 in Profiles > Text > Change Font and check Use Ligatures
+## In iterm2, select Fura Code Nerdfont size 18 in Profiles > Text > Change Font and check Use Ligatures
 
-# install neovim
+## install neovim
 brew install neovim
 
-# move init.vim to ~/.config/nvim/
+## move [init.vim](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/init.vim) to ~/.config/nvim/
 mkdir .config/
 
 mkdir .config/nvim
 
-
-# zsh
+## zsh
 brew install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -70,5 +58,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# rstudio (not working for me right now)
+# Install Anaconda: this includes vs code text editor
+bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
+
+# Install PyCharm: no command line installer (only on Ubuntu using snap)
+## Select MacOS X 10.5+ Keymap and add Hide All Tool Windows shortcut: Cmd+0 and Save As...: Cmd+Shift+S
+## In Appearance & Behavior > Appearance, Use Dark Window headers and select Fura Code Nerd Font size 18
+## In Editor > Font, select Fura Code Nerd Font size 18 and Enable font ligatures
+## Check Change font size (Zoom) with Command+Mouse Wheel in Editor > General
+## Check Show Whitespace in Editor > General > Appearance
+## If you use the Deep Ocean Editor theme from the [Material UI](https://www.material-theme.com/) plugin, change docstring color to [`30B000`](https://www.beautycolorcode.com/30b000)
+## Install [IdeaVim](https://github.com/JetBrains/ideavim) plugin
+## Install [BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport) plugin
+## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
+
+# rstudio and `r-essentials` (rstudio is not working for me right now)
 conda install -y rstudio
