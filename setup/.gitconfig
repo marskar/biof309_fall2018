@@ -1,6 +1,6 @@
     # core {{{
     [core]
-        editor = /usr/bin/vim
+        editor = /usr/local/bin/nvim
         excludesfile = /Users/np/.gitignore_global
         pager=less -x4
 
