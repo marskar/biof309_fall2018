@@ -37,8 +37,12 @@ brew cask install iterm2
 
 ## In iterm2, select Fura Code Nerdfont size 18 in Profiles > Text > Change Font and check Use Ligatures
 
-## Install chrome
+## Install java and JDK to stop the the JDK popups
+brew cask install java
+
+## Install chrome and vivaldi browsers (firefox already installed)
 brew cask install google-chrome
+brew cask install vivaldi
 
 ## Install keycastr
 brew cask install keycastr
