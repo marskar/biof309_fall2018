@@ -24,7 +24,6 @@ brew install neovim
 ## Install zsh
 brew install zsh
 
-
 ## Install Fira Code Nerdfont
 brew tap caskroom/fonts
 
@@ -88,5 +87,5 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## Install [BashSupport](https://plugins.jetbrains.com/plugin/4230-bashsupport) plugin
 ## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
 
-## Install RStudio and `r-essentials` (RStudio is not working for me right now)
-conda install -y rstudio
+## Install RStudio (this also installs `r-essentials`; RStudio is working for me as part of Anaconda 5.2.0)
+conda install -yc r rstudio
