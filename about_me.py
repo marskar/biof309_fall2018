@@ -25,8 +25,7 @@ z = 5.
 # replace my name with your name below
 name = "Martin"
 five = str(x)
-help(range)
 # instead of the help function, use quick documentation in PyCharm
 # check the type
 # types we use today: int, str, float, list, tuple
-type(5.)
+print(type(5.))
