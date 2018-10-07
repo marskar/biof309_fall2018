@@ -4,7 +4,7 @@
 
 A project is a directory that contains project files.
 
-Learning Goal: Establish principles to follow for all projects.
+Learning Goal: Establish principles to follow for all projects
 
 Following the Modularity and Reusability Principles makes code easier to 
 - read,
@@ -12,7 +12,6 @@ Following the Modularity and Reusability Principles makes code easier to
 - maintain, 
 - debug, and
 - test.
-
 
 ## Modular versus Monolithic
 
@@ -24,21 +23,8 @@ A monolithic file could, for example, contain all project
 - output.
 
 The benefits of modularity with the convenience of a single file:
-1. start with small code files called scripts and then
-2. combine the scripts into a larger file later on.
-
-## Python Scripts
-
-Scripts
-- are plain-text files that
-- have `.py` extensions and
-- contain Python code.
-
-Scripts in data science projects are typically run in a particular order.
-
-This order can visualized as a diagram called a directed acyclic graph (DAG). 
-
-![](https://ndownloader.figshare.com/files/13168322/preview/13168322/preview.jpg)
+1. start with small files and then
+2. combine them into a larger file later on.
 
 ## Don't Repeat Yourself (DRY)
 
@@ -46,58 +32,59 @@ While working on a project, you may notice common patterns.
 
 Don't repeat code! Reuse it!
 
-If code repeats in one file, we could define a function and use it throughout the file.
+One way to deal with code repetition is to define a function.
 
-Defining the same function in multiple scripts would be repetitive.
+Defining the same function in multiple code files would be repetitive.
 
-Instead, we will save our function definition in a Python code file called a module.
-
-Moving function definitions to modules -> smaller scripts.
+Instead, we will 
+- save our function definitions in `modules` and 
+- use the definitions in `scripts`.
 
 ## Scripts versus modules
 
-Modules allow us to avoid code repetition, by making class and function definitions available throughout a project.
+Scripts and modules
+- are plain-text files that
+- have `.py` extensions and
+- contain only Python code.
 
-We can use the `import` statement to make the function definition available in each file that needs it.
+Scripts and modules differ in how and why they are used. 
 
-Scripts and modules are similar in many ways, but differ in how and why they are used. 
+| Verb   | Filetype | Goal             |
+|--------|----------|------------------|
+| Run    | Script   | Perform actions  |
+| Import | Module   | Provide tools    |
 
-| Action | Filetype | Goal                            |
-|--------|----------|---------------------------------|
-| Run    | Script   | Do things, e.g. create a plot   |
-| Import | Module   | Define classes and/or functions |
+## Running Scripts
+
+Scripts in data science projects are typically run in a particular order.
+
+This order can be visualized as a diagram called a directed acyclic graph (DAG). 
+
+![](https://ndownloader.figshare.com/files/13168322/preview/13168322/preview.jpg)
+
+1. Create a script named `greet.py`:
+```python
+print("Hello World!")
+```
+2. Run the script in a shell:
+```bash
+python greet.py
+```
 
 ## Importing modules
 
-Inside of a directory called `my_project`, create 2 Python code files:
-
-1. A module named `say.py`, which uses the `def` statement to define a function called `hello`:
+1. Create a module named `say.py`, which uses the `def` statement to define a function called `hello`:
 ```python
 def hello():
-    print("Hello World!")
+       print("Hello World!")
 ```
 
-2. A script named `greet.py`, which uses the `import` statement to import the `say` module:
-```python
-import say
-```
-
-## Running scripts
-
-Right now, running `greet.py` will have no effect. 
-
-To print "Hello World",
-
-1. Add a function call to `greet.py`:
+2. Edit the `greet.py` script to import the `say` module and call the `hello` function:
 ```python
 import say
 say.hello()
 ```
-
-2. Run the `greet.py` script in a shell: 
-```bash
-python greet.py
-```
+3. Run the `greet.py` script in a shell as before. 
 
 ## Running modules as scripts
 
@@ -108,20 +95,22 @@ Add the code below to `say.py`:
 if __name__ == '__main__':
     hello()
 ```
-Now running `say.py` in a shell will also print "Hello World".
+Now running `say.py` in a shell will also print "Hello World!".
 
 The difference is that we can import the `hello` function from `say.py`, but not `greet.py`.
 
-This approach works best when we only want to call one function from a module.
+This approach works when we only want to call one function from a module.
 
 ## Running projects
-1. Create a copy of `say.py` called `__main__.py` 
-2. Go up one level in your folder system
-3. Run the project
+1. Create a directory called `my_project`
+2. Make a copy of `say.py` called `__main__.py` 
+3. Move `__main__.py` into `my_project`
+4. Run the project
 
 ```bash
+mkdir my_project
 cp say.py __main__.py
-cd ..
+mv __main__.py my_project
 python my_project
 ```
 
