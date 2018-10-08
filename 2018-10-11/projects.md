@@ -42,7 +42,7 @@ A monolithic file, like `analysis.ipynb`, could contain all project
 
 To get the benefits of modularity and the convenience of a single file: 
 1. start with small files and then 
-2. combine them into a larger file later on. 
+2. create a separate larger file later.
 
 ## Don't Repeat Yourself (DRY)
 
@@ -58,31 +58,19 @@ To further improve the modularity and reusability of our code, we will
 - define functions in `modules` and 
 - use the functions in `scripts`. 
 
-## Scripts versus modules
+## Modules versus Scripts
 
-Scripts and modules
+Modules and scripts
 - are plain-text files that
 - have `.py` extensions and
 - contain only Python code.
 
-Scripts and modules differ in how and why they are used.
+Modules and scripts differ in how and why they are used.
 
-| Filetype | Verb   | Goal             |
-|----------|--------|------------------|
-| Script   | Run    | Perform actions  |
-| Module   | Import | Define objects   |
-
-## Running Scripts
-
-Scripts in data science projects are typically run in a particular order.
-
-This order can be visualized as a diagram called a directed acyclic graph (DAG). 
-
-![](https://assets.datacamp.com/production/repositories/3687/datasets/3d4fdb37d0924a05ab75fcc786dc590b33dbbf4b/simple_dag.png) 
-
-Each script 
-- handles one and only one step in the process 
-- imports the tools it needs from modules that are included in the project. 
+| Filetype | Use    | Action           |
+|:--------:|:------:|:----------------:|
+| Module   | Import | Define functions |
+| Script   | Run    | Call functions   |
 
 ## Importing modules
 
@@ -100,36 +88,47 @@ say.hello()
 
 3. Type `python greet.py` in a shell and press Enter.
 
+## Running Scripts
+
+Scripts in data science projects are typically run in a particular order.
+
+This order can be visualized as a diagram called a directed acyclic graph (DAG). 
+
+![](https://assets.datacamp.com/production/repositories/3687/datasets/3d4fdb37d0924a05ab75fcc786dc590b33dbbf4b/simple_dag.png) 
+
+Each script 
+- handles one and only one step in the process 
+- imports the tools it needs from modules that are included in the project. 
 
 ## Running modules as scripts
 
 It is possible for the same file to be used as both a module and a script.
 
-To demonstrate this, add the code below to the end of `say.py`: {{1}}
+To demonstrate this, add the code below to the end of `say.py`: 
 ```python
 if __name__ == '__main__':
     hello()
 ```
-{{1}}
 
-The code above calls the `hello` function only when `say` is run as a script. {{2}}
 
-The `if` statement prevents `hello` from being called when `say` is imported. {{3}}
+The code above calls the `hello` function only when `say` is run as a script. 
 
-Adding `hello()` to `say.py` without the `if` statement, would make `greet.py` print `Hello World!` twice, because the entire `say.py` would be run upon import! {{4}}
+The `if` statement prevents `hello` from being called when `say` is imported. 
+
+Adding `hello()` to `say.py` without the `if` statement, would make `greet.py` print `Hello World!` twice, because the entire `say.py` would be run upon import! 
 
 ## Running projects
 
 In addition to running a module as a script, we can also run an entire project.
 
-This requires that the project contain a top-level script called `__main__.py`. {{1}}
+This requires that the project contain a top-level script called `__main__.py`. 
 
-The `__main__.py` script can  {{2}}
-- execute all of the code in the project simply by importing each script, {{2}}
-- accept input from the user, and {{2}}
-- work even if the project is turned into a zip file, e.g. `my_project.zip`. {{2}}
+The `__main__.py` script can  
+- execute all of the code in the project simply by importing each script, 
+- accept input from the user, and 
+- work even if the project is turned into a zip file, e.g. `my_project.zip`. 
 
-A great example of how we can enjoy the convenience of including everything in a single file without sacrificing modularity! {{3}}
+A great example of how we can enjoy the convenience of including everything in a single file without sacrificing modularity! 
 
 1. Make a directory (`mkdir`) called `my_project`
 2. Create a file called `__main__.py` with the contents `import greet`
