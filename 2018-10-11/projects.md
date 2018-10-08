@@ -32,7 +32,7 @@ While working on a project, you may notice common patterns.
 
 Don't repeat code! Reuse it!
 
-One way to deal with code repetition is to define a function.
+One way to avoid code repetition is to define a function.
 
 Defining the same function in multiple code files would be repetitive.
 
@@ -102,10 +102,10 @@ Adding `hello()` to `say.py` without the `if` statement, would make `greet.py` p
 
 ## Running projects
 
-1. Create a directory called `my_project`
-2. Make a copy of `say.py` called `__main__.py` 
-3. Move `__main__.py` into `my_project`
-4. Run the project
+1. Make a directory (`mkdir`) called `my_project`
+2. Create a copy (`cp`) of `say.py` called `__main__.py` 
+3. Move (`mv`) `__main__.py` into `my_project`
+4. Run the project like you would run a script
 
 ```bash
 mkdir my_project
