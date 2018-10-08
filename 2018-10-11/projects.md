@@ -72,7 +72,7 @@ Modules and scripts differ in how and why they are used.
 | Module   | Import | Define functions |
 | Script   | Run    | Call functions   |
 
-## Importing modules
+## Importing Modules
 
 1. Create a module named `say.py`, which uses the `def` statement to define a function called `hello` that prints `Hello World!` without accepting any input:
 ```python
@@ -100,7 +100,7 @@ Each script
 - handles one and only one step in the process 
 - imports the tools it needs from modules that are included in the project. 
 
-## Running modules as scripts
+## Running Modules as Scripts
 
 It is possible for the same file to be used as both a module and a script.
 
@@ -117,7 +117,7 @@ The `if` statement prevents `hello` from being called when `say` is imported.
 
 Adding `hello()` to `say.py` without the `if` statement, would make `greet.py` print `Hello World!` twice, because the entire `say.py` would be run upon import! 
 
-## Running projects
+## Running Projects
 
 In addition to running a module as a script, we can also run an entire project.
 
