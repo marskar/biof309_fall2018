@@ -67,20 +67,20 @@ Modules and scripts
 
 Modules and scripts differ in how and why they are used.
 
-| Filetype | Use    | Action           |
+| Filetype |  How?  |       Why?       |
 |:--------:|:------:|:----------------:|
 | Module   | Import | Define functions |
-| Script   | Run    | Call functions   |
+| Script   | Run    |  Call functions  |
 
 ## Importing Modules
 
-1. Create a module named `say.py`, which uses the `def` statement to define a function called `hello` that prints `Hello World!` without accepting any input:
+1. Create a module named `say.py`, which uses the `def` statement to define a function named `hello` that prints `Hello World!` without accepting any input:
 ```python
 def hello():
        print("Hello World!")
 ```
 
-2. Create a script called `greet.py`, which imports the `say` module and calls the `hello` function:
+2. Create a script named `greet.py`, which imports the `say` module and calls the `hello` function:
 ```python
 import say
 say.hello()
@@ -88,34 +88,37 @@ say.hello()
 
 3. Type `python greet.py` in a shell and press Enter.
 
-## Running Scripts
-
-Scripts in data science projects are typically run in a particular order.
-
-This order can be visualized as a diagram called a directed acyclic graph (DAG). 
-
-![](https://assets.datacamp.com/production/repositories/3687/datasets/3d4fdb37d0924a05ab75fcc786dc590b33dbbf4b/simple_dag.png) 
-
-Each script 
-- handles one and only one step in the process 
-- imports the tools it needs from modules that are included in the project. 
-
 ## Running Modules as Scripts
 
 It is possible for the same file to be used as both a module and a script.
 
-To demonstrate this, add the code below to the end of `say.py`: 
+To demonstrate this, we could add the code below to the end of the `say` module: 
 ```python
 if __name__ == '__main__':
     hello()
 ```
 
-
 The code above calls the `hello` function only when `say` is run as a script. 
 
 The `if` statement prevents `hello` from being called when `say` is imported. 
 
-Adding `hello()` to `say.py` without the `if` statement, would make `greet.py` print `Hello World!` twice, because the entire `say.py` would be run upon import! 
+Adding `hello()` to `say` without the `if` statement, would make `greet` print `Hello World!` twice,
+because the `say` module, like all `.py` files, is executed immediately upon import! 
+
+## Running Scripts
+
+Scripts in data science projects are typically run in a particular order.
+
+This order can be visualized as a diagram called a directed acyclic graph (DAG): 
+
+![](https://assets.datacamp.com/production/repositories/3687/datasets/3d4fdb37d0924a05ab75fcc786dc590b33dbbf4b/simple_dag.png) 
+
+Each script handles one step in the process and imports the tools it needs from modules that are included in the project. 
+
+To run a series of scripts, use the `import` statement as in the example below.
+```python
+import get_data, clean_data, fit_model, evaluate_model
+```
 
 ## Running Projects
 
@@ -124,7 +127,7 @@ In addition to running a module as a script, we can also run an entire project.
 This requires that the project contain a top-level script called `__main__.py`. 
 
 The `__main__.py` script can  
-- execute all of the code in the project simply by importing each script, 
+- execute all of the code in the project by importing each script, 
 - accept input from the user, and 
 - work even if the project is turned into a zip file, e.g. `my_project.zip`. 
 
