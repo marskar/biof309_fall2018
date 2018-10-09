@@ -215,7 +215,7 @@ A great example of how we can enjoy the convenience of including everything in a
 
 ### In other words...
 
-The script that uses the import statement to execute all of the other scripts in a project should be at the top level and will be most useful if it is named __main__.py.
+The script that uses the import statement to execute all of the other scripts in a project should be at the top level and will be most useful if it is named `__main__.py`.
 Double underscores around Python names are pronounced dunder.
 The double underscores indicate that the name is special.
 Python objects that have such names usually have some superpowers. 
