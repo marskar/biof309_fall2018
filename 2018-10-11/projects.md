@@ -102,8 +102,9 @@ The code above calls the `hello` function only when `say` is run as a script.
 
 The `if` statement prevents `hello` from being called when `say` is imported. 
 
-Adding `hello()` to `say` without the `if` statement, would make `greet` print `Hello World!` twice,
-because the `say` module, like all `.py` files, is executed immediately upon import! 
+Adding `hello()` to `say` without the `if` statement, would make `greet` print `Hello World!` twice.
+Once when the `say` module is imported and again when `greet` calls `hello`. 
+This is because the `say` module, like all `.py` files, is executed immediately upon import! 
 
 ## Running Scripts
 
@@ -122,16 +123,14 @@ import get_data, clean_data, fit_model, evaluate_model
 
 ## Running Projects
 
-In addition to running a module as a script, we can also run an entire project.
+The `import` statement used to execute all of the scripts in a project should be in a top-level script called `__main__.py`.
 
-This requires that the project contain a top-level script called `__main__.py`. 
+The `__main__.py` script can  {{2}}
+- be run outside of the project, {{2}}
+- accept input from the user, and {{2}}
+- work even if the project is turned into a zip file, e.g. `my_project.zip`. {{2}}
 
-The `__main__.py` script can  
-- execute all of the code in the project by importing each script, 
-- accept input from the user, and 
-- work even if the project is turned into a zip file, e.g. `my_project.zip`. 
-
-A great example of how we can enjoy the convenience of including everything in a single file without sacrificing modularity! 
+A great example of how we can enjoy the convenience of including everything in a single file without sacrificing modularity! {{3}}
 
 1. Make a directory (`mkdir`) called `my_project`
 2. Create a file called `__main__.py` with the contents `import greet`
