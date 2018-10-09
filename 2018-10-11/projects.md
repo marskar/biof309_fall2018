@@ -123,7 +123,7 @@ import get_data, clean_data, fit_model, evaluate_model
 
 ## Running Projects
 
-The `import` statement used to execute all of the scripts in a project should be in a top-level script called `__main__.py`.
+The `import` statement used to execute all of the scripts in a project would be most useful in a top-level script called `__main__.py`.
 
 The `__main__.py` script can  {{2}}
 - be run outside of the project, {{2}}
