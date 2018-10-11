@@ -132,7 +132,7 @@ Schedule
 | 2  | 2018-09-20 | Python Basics                                | Martin            |
 | 3  | 2018-09-27 | Running Python code                          | Martin            |
 | 4  | 2018-10-04 | Git and GitHub                               | Martin            |
-| 5  | 2018-10-11 | Functions, Modules, and Packages + Loops     | Liuping           |
+| 5  | 2018-10-11 | Functions, Modules, and Packages + Loops     | Martin            |
 | 6  | 2018-10-18 | Booleans and Conditionals                    | Liuping & Michael |
 | 7  | 2018-10-25 | NumPy and Arrays                             | Michael           |
 | 8  | 2018-11-01 | Pandas and DataFrames                        | Martin            |
