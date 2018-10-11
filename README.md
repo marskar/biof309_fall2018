@@ -130,17 +130,17 @@ Schedule
 |----|------------|----------------------------------------------|-------------------|
 | 1  | 2018-09-13 | Integrated Development Environments          | Martin            |
 | 2  | 2018-09-20 | Python Basics                                | Martin            |
-| 3  | 2018-09-27 | Functions, Modules, and Packages             | Martin            |
-| 4  | 2018-10-04 | Loops                                        | Martin            |
-| 5  | 2018-10-11 | Booleans and Conditionals                    | Liuping           |
-| 6  | 2018-10-18 | NumPy and Arrays                             | Liuping & Michael |
-| 7  | 2018-10-25 | Pandas and DataFrames                        | Michael           |
-| 8  | 2018-11-01 | Machine Learning                             | Martin            |
-| 9  | 2018-11-08 | Data Visualization                           | All Instructors   |
-| 10 | 2018-11-15 | Web Development                              | Martin            |
-| 11 | 2018-11-22 | Comprehensions and Lambdas                   | All Instructors   |
-| 12 | 2018-11-29 | Iterators and Generators                     | All Instructors   |
-| 13 | 2018-12-06 | Requested Topics/Review/Final Project Clinic | All Instructors   |
+| 3  | 2018-09-27 | Running Python code                          | Martin            |
+| 4  | 2018-10-04 | Git and GitHub                               | Martin            |
+| 5  | 2018-10-11 | Functions, Modules, and Packages + Loops     | Liuping           |
+| 6  | 2018-10-18 | Booleans and Conditionals                    | Liuping & Michael |
+| 7  | 2018-10-25 | NumPy and Arrays                             | Michael           |
+| 8  | 2018-11-01 | Pandas and DataFrames                        | Martin            |
+| 9  | 2018-11-08 | Machine Learning                             | All Instructors   |
+| 10 | 2018-11-15 | Data Visualization                           | Martin            |
+| 11 | 2018-11-22 | Requested Topics/Review/Final Project Clinic | All Instructors   |
+| 12 | 2018-11-29 | Student Presentations                        |                   |
+| 13 | 2018-12-06 | Student Presentations                        |                   |
 | 14 | 2018-12-13 | Student Presentations                        |                   |
 
 
