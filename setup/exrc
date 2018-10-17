@@ -8,9 +8,11 @@
 
 set theme=charcoal
 
+" Set PEP8-compliant indentation https://realpython.com/vim-and-python-a-match-made-in-heaven/
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 set history=100
 set undolevels=100
