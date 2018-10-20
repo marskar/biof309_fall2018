@@ -1,4 +1,4 @@
-# %%
+# %% imports
 import numpy as np
 import matplotlib.pyplot as plt
 # %% scatter
@@ -9,6 +9,7 @@ colors = np.random.rand(N)
 area = np.pi * (15 * np.random.rand(N))**2  # 0 to 15 point radii
 plt.scatter(x, y, s=area, c=colors, alpha=0.5)
 plt.show()
+# %% wavy
 np.random.rand()
 X = np.linspace(-np.pi, np.pi, 256,endpoint=True)
 C,S = np.cos(X), np.sin(X)
