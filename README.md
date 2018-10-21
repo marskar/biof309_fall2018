@@ -94,14 +94,17 @@ Please install the following programs **BEFORE** the first class:
     If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
     
     Before the first class, please watch the [Getting Started with PyCharm](https://www.youtube.com/watch?v=BPC-bGdBSM8&list=PLQ176FUIyIUZ1mwB-uImQE-gmkwzjNLjP) video series.
+    
     Before the second class, please watch the [PyCharm In-Depth VCS](https://www.youtube.com/watch?v=jFnYQbUZQlA) video series.
 
 During the first few classes, we will set up accounts on:
 
 1. [DataCamp](https://www.datacamp.com)
 
-    Since Fall 2017, the very nice folks at [DataCamp](https://www.datacamp.com) have been generously supporting our class via their [DataCamp for the Classroom](https://www.datacamp.com/groups/education).
+    Since Fall 2017, the very nice folks at [DataCamp](https://www.datacamp.com) have been generously supporting our class via their [DataCamp for the Classroom](https://www.datacamp.com/groups/education) initiative.
+    
     This program give us free 6 month access to DataCamp's awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
+    
     We will discuss the most interesting examples from DataCamp during class and point out others to be reviewed outside of class.
 
 2. [PluralSight](https://www.pluralsight.com)
