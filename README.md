@@ -92,8 +92,11 @@ Please install the following programs **BEFORE** the first class:
     If you have a .edu email address, please install [PyCharm Integrated Development Environment (IDE)](https://www.jetbrains.com/pycharm/) Professional using [this link](https://www.jetbrains.com/student/).
 
     If not, a installation link will be distributed to you by email and made available on [Slack](https://biof309.slack.com/).
+    
+    Before the first class, please watch the [Getting Started with PyCharm](https://www.youtube.com/watch?v=BPC-bGdBSM8&list=PLQ176FUIyIUZ1mwB-uImQE-gmkwzjNLjP) video series.
+    Before the second class, please watch the [PyCharm In-Depth VCS](https://www.youtube.com/watch?v=jFnYQbUZQlA) video series.
 
-During the first class, we will set up accounts on:
+During the first few classes, we will set up accounts on:
 
 1. [DataCamp](https://www.datacamp.com)
 
