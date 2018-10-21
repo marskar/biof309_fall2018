@@ -100,9 +100,9 @@ During the first few classes, we will set up accounts on:
 
 1. [DataCamp](https://www.datacamp.com)
 
-    The very nice folks at [DataCamp](https://www.datacamp.com) have given us free 6 month access to their awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
-
-    We will discuss the most interesting examples during class and point out others to be reviewed outside of class.
+    Since Fall 2017, the very nice folks at [DataCamp](https://www.datacamp.com) have been generously supporting our class via their [DataCamp for the Classroom](https://www.datacamp.com/groups/education).
+    This program give us free 6 month access to DataCamp's awesome Data Visualization📊, Machine Learning🤖, and Data Science learning materials.
+    We will discuss the most interesting examples from DataCamp during class and point out others to be reviewed outside of class.
 
 2. [PluralSight](https://www.pluralsight.com)
 
