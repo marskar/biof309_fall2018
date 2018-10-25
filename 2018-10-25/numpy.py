@@ -215,3 +215,9 @@ data.argmax()
 data.max()
 data.mean()
 data.std()
+
+import matplotlib.pyplot as plt
+# make a histogram of the diabetes data and matplotlib
+# https://docs.scipy.org/doc/numpy/user/quickstart.html
+plt.hist(data, bins=50, density=1)
+plt.show()
