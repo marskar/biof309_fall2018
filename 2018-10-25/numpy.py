@@ -207,8 +207,11 @@ c[1, 1]
 from sklearn.datasets import load_diabetes
 
 diabetes = load_diabetes()
-type(data)
+diabetes.DESCR
 data = diabetes['data']
+
+# %% explore diabetes data
+type(data)
 data.shape
 data.dtype
 data.argmax()
@@ -216,8 +219,8 @@ data.max()
 data.mean()
 data.std()
 
+# %% make a histogram of the diabetes data and matplotlib
 import matplotlib.pyplot as plt
-# make a histogram of the diabetes data and matplotlib
 # https://docs.scipy.org/doc/numpy/user/quickstart.html
 plt.hist(data, bins=50, density=1)
 plt.show()
