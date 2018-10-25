@@ -200,8 +200,6 @@ def f(x, y):
 c = np.fromfunction(f, (3, 3), dtype=int)
 c
 
-# pick a single value from b
-c[1, 1]
 
 # %% get sklearn datasets
 from sklearn.datasets import load_diabetes
