@@ -140,7 +140,7 @@ Schedule
 | 4  | 2018-10-04 | Git and GitHub                               | Martin            |
 | 5  | 2018-10-11 | Functions, Modules, and Packages + Loops     | Martin            |
 | 6  | 2018-10-18 | Booleans and Conditionals                    | Liuping & Michael |
-| 7  | 2018-10-25 | NumPy and Arrays                             | Michael & Martin  |
+| 7  | 2018-10-25 | NumPy and Arrays                             | Martin            |
 | 8  | 2018-11-01 | Pandas and DataFrames                        | Michael & Martin  |
 | 9  | 2018-11-08 | Machine Learning                             | Martin            |
 | 10 | 2018-11-15 | Data Visualization                           | Liuping & Michael |
