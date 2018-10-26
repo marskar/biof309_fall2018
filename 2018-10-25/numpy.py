@@ -1,13 +1,6 @@
 # %% import numpy
 import numpy as np
 
-# %% create an array using the array function
-a = np.array([
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8]
-])
-
 # %% create an array - using other functions
 a = np.arange(9).reshape(3, 3)
 z = np.zeros((3, 4))
@@ -125,7 +118,7 @@ a[(1, 2)]
 
 # also works with a single item tuple
 a[(2)]
-a[2,]
+a[2, ]
 
 # don't use lists for this
 a[[1, 2]]

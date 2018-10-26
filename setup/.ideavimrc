@@ -5,7 +5,7 @@
 set surround
 " Commands: ys, cs, ds, S
 
-" set vim-multiple-cursors
+set multiple-cursors
 " Commands: <A-n>, <A-x>, <A-p>, g<A-n>
 
 " ============================================================================
@@ -59,6 +59,7 @@ set wrapscan
 " ============================================================================
 "
 nnoremap <Space> :action ExecuteInPyConsoleAction<CR>
+vnoremap <Space> :action ExecuteInPyConsoleAction<CR>
 
 nnoremap ga :action GotoAction<CR>
 nnoremap gc :action GotoClass<CR>
@@ -110,4 +111,3 @@ nnoremap <Bslash>x :action ReopenClosedTab<CR>
 
 " clear search highlighting when hitting backslash twice
 nnoremap <Bslash><Bslash> :nohlsearch<CR>
-
