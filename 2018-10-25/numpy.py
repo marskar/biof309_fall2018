@@ -1,9 +1,8 @@
-# An important change!
 # %% import numpy
 import numpy as np
 
 # %% create an array using the array function
-array = np.array([
+a = np.array([
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8]
@@ -13,8 +12,7 @@ array = np.array([
 a = np.arange(9).reshape(3, 3)
 z = np.zeros((3, 4))
 o = np.ones((4, 3))
-z.shape
-o
+
 # %% shape attribute
 a.shape
 z.shape
@@ -39,19 +37,19 @@ a.shape
 a
 np.arange(9)  # start flat
 a.reshape(-1)  # using reshape
+a.shape = 9  # using shape, if size is exactly 9
 a.size
-a.shape = 9  # using shape
-a.shape = -1  # using shape
-a
-9,
-a
-a.shape = 3, 3  # using shape
 
 list(a.flat)  # into a single list
 a.ravel()  # into an array
+a.flatten()  # into an array
 print(*a)  # into arguments (rows)
-a.flatten()
 print(*a.flat)  # into arguments (values)
+
+# %% When in doubt, use -1 in shape and reshape
+a.shape = 3, 3  # using shape, if size is exactly 9
+a.shape = -1  # using shape, regardless of size
+a.shape = 3, -1  # using shape, if size a multiple of 3
 
 # %% transposing
 a.T
@@ -68,6 +66,7 @@ for row in "pythoniscool":
     print(row)
 
 # %% iteration example
+# a list of strings
 list("pythoniscool")
 p = np.array(list("pythoniscool")).reshape(2, 6)
 p
@@ -77,13 +76,17 @@ next(f)
 for i in p.flat:
     print(i)
 
+# back to a list of strings
 [x for x in p.flat]
-a
+
+# back to a string
+''.join(p.flat)
+
 # %% basic arithmetic
 a - a
 a ** 2
-
 a
+
 # %% re-assignment
 a += a
 a = a + a
@@ -91,7 +94,9 @@ a
 
 c = 0
 c += 1
+c += 1
 c
+
 # %% boolean array
 True
 type(True)
@@ -104,9 +109,8 @@ z[z == 0]
 # %% be careful with bools...
 isinstance(True, bool)
 isinstance(True, int)
+issubclass(bool, int)
 True - 1
-type(a)
-isinstance(a, type(a))
 
 # %% indexing with ints
 a[0]  # first row
@@ -154,7 +158,11 @@ _, second, *_ = a  # will work for any number of rows
 *others, last = a  # will work for any number of rows
 _, _, third, *_ = a  # will work for any number of rows
 
+# similar to using -1 in shape and reshape,
+# in that both can work regardless of array size
 a.reshape(3, -1)
+# this results in more robust (less fragile) code!
+
 # %% no copy
 b = a
 a == b
@@ -195,9 +203,12 @@ v = a.view
 v is a
 id(v) == id(a)
 a.shape = 3, 3
-v.shape = 9  # a view has no shape
-v[1, 2] = 9  # a view does not support item assignment
-v_copy = v.copy()  # a view does not have the copy method
+
+# These 3 lines result in errors!
+# remove the #s to see the errors
+#v.shape = 9  # a view has no shape
+#v[1, 2] = 9  # a view does not support item assignment
+#v_copy = v.copy()  # a view does not have the copy method
 
 # %% copy types explained in lists
 from copy import deepcopy
@@ -236,21 +247,32 @@ c = np.fromfunction(f, (3, 3), dtype=int)
 c
 
 # %% get sklearn datasets
-from sklearn.datasets import ( load_diabetes, load_digits, load_wine )
+from sklearn.datasets import (
+    load_boston,
+    load_breast_cancer,
+    load_diabetes,
+    load_digits,
+    load_iris,
+    load_wine
+)
 
-datasets = ['digits', 'boston', 'iris', 'wine']
+# Challenge: can you write a function that can take any of the strings below
+# plot a histogram on the corresponding scikit-learn dataset's data?
+datasets = ['breast_cancer', 'boston', 'diabetes', 'digits', 'iris', 'wine']
 diabetes = load_diabetes()
 digits = load_digits()
 
+# you'll probably need to use eval in for your function
 x = 'digits()'
-dataset = eval('load_'+x)
+dataset = eval('load_' + x)
 
-data = dataset['data']
+
+# explore the dataset sklearn 'Bunch' type
 type(diabetes)
 diabetes.keys()
 diabetes.feature_names
 
-# %% explore diabetes data
+# %% explore the data
 type(data)
 data.shape
 data.dtype
