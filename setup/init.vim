@@ -658,3 +658,4 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
+highlight Normal ctermfg=white ctermbg=black
