@@ -35,6 +35,7 @@ brew cask install font-firacode-nerd-font
 brew cask install iterm2
 
 ## In iterm2, select Fura Code Nerdfont size 18 in Profiles > Text > Change Font and check Use Ligatures
+## In iterm2, select Appearance > Theme: Dark
 
 ## Install java and JDK to stop the the JDK popups
 brew cask install java
@@ -54,7 +55,7 @@ brew cask install flycut
 
 ## Move [.gitconfig](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.gitconfig), [.ideavimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.ideavimrc), [.pypirc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.pypirc), and [.vimrc](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/.vimrc) to ~ and change password in `.pypirc`
 
-## Move [init.vim](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/init.vim) to ~/.config/nvim/
+## Move [init.vim](https://raw.githubusercontent.com/marskar/biof309_fall2018/master/setup/init.vim) to ~/.config/nvim/ or [generate a new file](https://github.com/avelino/vim-bootstrap#vim-bootstrap)
 mkdir .config/
 
 mkdir .config/nvim
@@ -90,3 +91,8 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 
 ## Install RStudio (this also installs `r-essentials`; RStudio is working for me as part of Anaconda 5.2.0)
 conda install -yc r rstudio
+
+# Neovim setup
+brew install ctags
+pip install flake8 jedi
+pip3 install --user --upgrade neovim
