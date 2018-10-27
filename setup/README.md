@@ -94,5 +94,7 @@ conda install -yc r rstudio
 
 # Neovim setup
 brew install ctags
+
 pip install flake8 jedi
-pip3 install --user --upgrade neovim
+
+pip3 install neovim
