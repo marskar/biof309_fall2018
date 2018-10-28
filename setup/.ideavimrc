@@ -84,6 +84,11 @@ nnoremap ]o :action SelectNextOccurrence<CR>
 nnoremap [o :action SelectPreviousOccurrence<CR>
 nnoremap ]u :action GotoNextElementUnderCaretUsage<CR>
 nnoremap [u :action GotoPrevElementUnderCaretUsage<CR>
+nnoremap ]p :action org.intellij.plugins.markdown.ui.actions.editorLayout.EditorOnlyLayoutChangeAction <CR>
+nnoremap [p :action org.intellij.plugins.markdown.ui.actions.editorLayout.EditorAndPreviewLayoutChangeAction <CR>
+nnoremap ]P :action org.intellij.plugins.markdown.ui.actions.editorLayout.EditorOnlyLayoutChangeAction <CR>
+nnoremap [P :action org.intellij.plugins.markdown.ui.actions.editorLayout.PreviewOnlyLayoutChangeAction <CR>
+nnoremap =ow :action EditorToggleUseSoftWraps <CR>
 
 " backslash as leader key mappings
 nnoremap <Bslash>a :action SelectAllOccurrences<CR>
