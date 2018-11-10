@@ -144,7 +144,7 @@ Schedule
 | 8  | 2018-11-01 | Pandas and DataFrames                        | Michael & Martin  |
 | 9  | 2018-11-15 | Data Visualization                           | Liuping & Michael |
 | 10 | 2018-11-19 | Machine Learning                             | Martin            |
-| 11 | 2018-11-26 | Requested Topics/Review/Final Project Clinic | All Instructors   |
+| 11 | 2018-11-27 | Requested Topics/Review/Final Project Clinic | All Instructors   |
 | 12 | 2018-11-29 | Student Presentations                        |                   |
 | 13 | 2018-12-06 | Student Presentations                        |                   |
 | 14 | 2018-12-13 | Student Presentations                        |                   |
