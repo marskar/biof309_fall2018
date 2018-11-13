@@ -139,10 +139,10 @@ Schedule
 | 3  | 2018-09-27 | Running Python code                     | Martin            |
 | 4  | 2018-10-04 | Git and GitHub                          | Martin            |
 | 5  | 2018-10-11 | Functions, Modules, & Packages + Loops  | Martin            |
-| 6  | 2018-10-18 | Booleans and Conditionals               | Liuping & Michael |
+| 6  | 2018-10-18 | Booleans and Conditionals               | Jinping & Michael |
 | 7  | 2018-10-25 | NumPy and Arrays                        | Martin            |
-| 8  | 2018-11-01 | Pandas and DataFrames                   | Michael & Martin  |
-| 9  | 2018-11-15 | Data Visualization                      | Liuping & Michael |
+| 8  | 2018-11-01 | Pandas and DataFrames                   | Jinping & Michael |
+| 9  | 2018-11-15 | Data Visualization                      | Jinping & Michael |
 | 10 | 2018-11-19 | Machine Learning                        | Martin            |
 | 11 | 2018-11-27 | Requested Topics/Final Project Clinic   | All Instructors   |
 | 12 | 2018-11-29 | Student Presentations                   |                   |
