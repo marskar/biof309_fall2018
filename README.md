@@ -142,10 +142,10 @@ Schedule
 | 6  | 2018-10-18 | Booleans and Conditionals               | Jinping & Michael |
 | 7  | 2018-10-25 | NumPy and Arrays                        | Martin            |
 | 8  | 2018-11-01 | Pandas and DataFrames                   | Jinping & Michael |
-| 9  | 2018-11-15 | Data Visualization                      | Jinping & Michael |
-| 10 | 2018-11-19 | Machine Learning                        | Martin            |
-| 11 | 2018-11-27 | Requested Topics/Final Project Clinic   | All Instructors   |
-| 12 | 2018-11-29 | Student Presentations                   |                   |
+| 9  | 2018-11-19 | Data Visualization                      | Jinping & Michael |
+| 10 | 2018-11-27 | Machine Learning                        | Martin            |
+| 11 | 2018-11-29 | Requested Topics/Final Project Clinic   | All Instructors   |
+| 12 | 2018-12-?? | Student Presentations                   |                   |
 | 13 | 2018-12-06 | Student Presentations                   |                   |
 | 14 | 2018-12-13 | Student Presentations                   |                   |
 
