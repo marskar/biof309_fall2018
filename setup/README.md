@@ -24,6 +24,9 @@ brew install neovim
 ## Install zsh
 brew install zsh
 
+# Install terminal tools (e.g. pdftotext)
+brew install xpdf
+
 ## Install Fira Code Nerdfont
 brew tap caskroom/fonts
 
