@@ -1,14 +1,18 @@
 import doctest
 
 
-def say(string: str = 'hello') -> None:
+# This only exists in the current file
+
+def say(string: str = 'hello', mult: int = 1) -> None:
     """prints the provided string
     >>> say()
     hello
     >>> say('world')
     world
+    >>> say('world', 2)
+    worldworld
     """
-    print(string)
+    print(string * mult)
 
 
 if __name__ == '__main__':
