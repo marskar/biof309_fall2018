@@ -7,6 +7,14 @@
 - make README.md or index.md file with relative link to slides.html
 - Setting > GitHub Pages > Source, Select `master branch` and click Save
 - Click link to site, click link to slides, and copy the url
+- Mention [PyData DC talk](https://marskar.github.io/notebook-war/slides.html) as an example
+
+# Talk about Test-Driven Development
+- type hints
+- docstrings
+- doctest
+- help function
+- dunder attributes
 
 # Mention skippy python package
 - [PyPI](https://pypi.org/project/skippy/)
