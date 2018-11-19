@@ -16,9 +16,9 @@ Python Data Science Handbook by Jake VanderPlas
 
 - Google Colab [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)
 
-- Jupyter Lab [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?urlpath=lab/notebooks/Index.ipynb)
+- Jupyter Lab [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?urlpath=lab/notebooks/Index.ipynb)
 
-- Jupyter Notebook [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?filepath=notebooks%2FIndex.ipynb)
+- Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?filepath=notebooks%2FIndex.ipynb)
 
 
 # Recommend book
@@ -26,9 +26,9 @@ Introduction to Machine learning with Python, by Andreas Müller
 
 - Google Colab [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/introduction_to_ml_with_python/master)
 
-- Jupyter Lab [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master?urlpath=lab)
+- Jupyter Lab [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master?urlpath=lab)
 
-- Jupyter Notebook [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master)
+- Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master)
 
 
 # Walkthrough recent workshop
