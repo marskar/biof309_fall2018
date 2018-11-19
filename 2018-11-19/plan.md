@@ -14,7 +14,10 @@
 # Highlight key points from textbook
 Python Data Science Handbook by Jake VanderPlas
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)
+Classic Jupyter Notebook
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?filepath=notebooks%2FIndex.ipynb)
+Jupyter Lab
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jakevdp/PythonDataScienceHandbook/master?urlpath=lab/notebooks/Index.ipynb)
 
 # Walkthrough recent workshop
 Introduction to Machine learning with Python, 4h interactive workshop, by Andreas Müller
