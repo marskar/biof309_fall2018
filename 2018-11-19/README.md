@@ -29,17 +29,17 @@ Python Data Science Handbook by Jake VanderPlas
 
 # Recommend book
 Introduction to Machine learning with Python, by Andreas Müller
-- Google Colab [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/introduction_to_ml_with_python/master)
+- Google Colab [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/introduction_to_ml_with_python/blob/master)
 - Jupyter Lab [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master?urlpath=lab)
 - Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/introduction_to_ml_with_python/master)
 
 # Walkthrough recent workshop
 Introduction to Machine learning with Python, 4h interactive workshop, by Andreas Müller
 - Google Colab
-    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-1-of-4/master)
-    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-2-of-4/master)
-    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-3-of-4/master)
-    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-4-of-4/master)
+    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-1-of-4/blob/master/notebooks)
+    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-2-of-4/blob/master/notebooks)
+    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-3-of-4/blob/master/notebooks)
+    1. [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/amueller/ml-workshop-4-of-4/blob/master/notebooks)
 - Jupyter Lab 
     1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/ml-workshop-1-of-4/master?urlpath=lab)
     1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amueller/ml-workshop-2-of-4/master?urlpath=lab)
