@@ -33,10 +33,27 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 " the main R plugin providing RStudio-esque features
 Plug 'jalvesaq/Nvim-R'
-" autocompletion manager (NCM)
+" autocompletion for R
+" assuming you're using vim-plug: https://github.com/junegunn/vim-plug
 Plug 'ncm2/ncm2'
-" autocompletion for R, works with NCM
+Plug 'roxma/nvim-yarp'
 Plug 'gaalcaras/ncm-R'
+
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+
+" Vim 8 only
+if !has('nvim')
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+" Optional: for snippet support
+" Further configuration might be required, read below
+Plug 'sirver/UltiSnips'
+Plug 'ncm2/ncm2-ultisnips'
 " R setup: https://kadekillary.work/post/nvim-r/
 " R setup: https://github.com/beigebrucewayne/vim-ide-4-all/blob/master/R-neovim.md
 " For Rmarkdown syntax
@@ -85,11 +102,6 @@ if v:version >= 703
   Plug 'Shougo/vimshell.vim'
 endif
 
-if v:version >= 704
-  "" Snippets
-  Plug 'SirVer/ultisnips'
-endif
-
 Plug 'honza/vim-snippets'
 
 "" Color
@@ -114,6 +126,12 @@ if filereadable(expand("~/.config/nvim/local_bundles.vim"))
 endif
 
 call plug#end()
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANTE: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
 
 
 " Required:
