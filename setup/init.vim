@@ -334,27 +334,28 @@ set autoread
 " Keyboard shortcuts for <- -> and other operators in R specific files
 " https://github.com/jalvesaq/Nvim-R/issues/85
 " The trailing spaces below are intentional!
-autocmd FileType r inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
-autocmd FileType rnoweb inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
-autocmd FileType rmd inoremap <buffer> <A-n> <Esc>:normal! a %>%<CR>a<CR>
-autocmd FileType r inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
-autocmd FileType rmd inoremap <buffer> <A-m> <Esc>:normal! a %>%<CR>a 
-autocmd FileType r inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
-autocmd FileType rmd inoremap <buffer> <A-i> <Esc>:normal! a %in%<CR>a 
-autocmd FileType r inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
-autocmd FileType rmd inoremap <buffer> <A-.> <Esc>:normal! a -><CR>a 
-autocmd FileType r inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
-autocmd FileType rmd inoremap <buffer> <A-/> <Esc>:normal! a %/%<CR>a 
-autocmd FileType r inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
-autocmd FileType rnoweb inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
-autocmd FileType rmd inoremap <buffer> <A-8> <Esc>:normal! a %*%<CR>a 
+autocmd FileType r inoremap <buffer> ;m <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType rmd inoremap <buffer> ;n <Esc>:normal! a %>%<CR>a<CR>
+autocmd FileType r inoremap <buffer> ;m <Esc>:normal! a %>%<CR>a 
+autocmd FileType rmd inoremap <buffer> ;m <Esc>:normal! a %>%<CR>a 
+autocmd FileType r inoremap <buffer> ;i <Esc>:normal! a %in%<CR>a 
+autocmd FileType rmd inoremap <buffer> ;i <Esc>:normal! a %in%<CR>a 
+autocmd FileType r inoremap <buffer> ;, <Esc>:normal! a <-<CR>a 
+autocmd FileType rmd inoremap <buffer> ;, <Esc>:normal! a <-<CR>a 
+autocmd FileType r inoremap <buffer> ;. <Esc>:normal! a -><CR>a 
+autocmd FileType rmd inoremap <buffer> ;. <Esc>:normal! a -><CR>a 
+autocmd FileType r inoremap <buffer> ;/ <Esc>:normal! a %/%<CR>a 
+autocmd FileType rmd inoremap <buffer> ;/ <Esc>:normal! a %/%<CR>a 
+autocmd FileType r inoremap <buffer> ;8 <Esc>:normal! a %*%<CR>a 
+autocmd FileType rmd inoremap <buffer> ;8 <Esc>:normal! a %*%<CR>a 
+
+autocmd FileType rmd nnoremap <buffer> <leader><space> :w<CR> :!Rscript -e "rmarkdown::render('%')"<CR>
+autocmd FileType r nnoremap <buffer> <leader><space> :w<CR> :!Rscript %<CR>
+autocmd FileType python nnoremap <buffer> <leader><space> :w ! python3<CR>
 " http://sherifsoliman.com/2017/07/22/nvim-r/
 " press alt+, to have Nvim-R insert the assignment operator: <-
 let R_assign_map = "<A-,>"
+
 
 " set a minimum source editor width
 " let R_min_editor_width = 80
