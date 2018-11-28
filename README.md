@@ -145,8 +145,8 @@ Schedule
 | 9  | 2018-11-19 | Machine Learning                        | Martin            |
 | 10 | 2018-11-27 | Data Visualization                      | Jinping & Michael |
 | 11 | 2018-11-29 | Requested Topics/Final Project Clinic   | All Instructors   |
-| 12 | 2018-12-?? | Student Presentations                   |                   |
 | 13 | 2018-12-06 | Student Presentations                   |                   |
+| 12 | 2018-12-11 | Student Presentations                   |                   |
 | 14 | 2018-12-13 | Student Presentations                   |                   |
 
 
