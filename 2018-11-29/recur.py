@@ -3,11 +3,11 @@ from datetime import datetime, timedelta
 from doctest import testmod
 
 
-def weekly(start: Union[int, str, datetime.date],
-           end: Union[int, str, datetime.date],
-           weekdays: Union[int, str, Iterable] = range(7),
-           input_format: str = '%Y%m%d',
-           output_format: str = '%Y-%m-%d') -> List[str]:
+def recur(start: Union[int, str, datetime.date],
+          end: Union[int, str, datetime.date],
+          weekdays: Union[int, str, Iterable] = range(7),
+          input_format: str = '%Y%m%d',
+          output_format: str = '%Y-%m-%d') -> List[str]:
     """Fill in the dates between the start and end dates.
 
     Args:
@@ -28,28 +28,28 @@ def weekly(start: Union[int, str, datetime.date],
 
     Examples:
         The first 3 arguments can be integers.
-        >>> weekly(start = 20180913, end = 20180917, weekdays = 1234560)
+        >>> recur(start = 20180913, end = 20180917, weekdays = 1234560)
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
 
         The first 3 arguments can be strings.
-        >>> weekly('20180913', '20180917', '03456')
+        >>> recur('20180913', '20180917', '03456')
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
 
         The first 3 arguments ignore punctuations and whitespace in strings.
-        >>> weekly('2018-09-13', '2018-09-17', '0, 3, 4, 5')
+        >>> recur('2018-09-13', '2018-09-17', '0, 3, 4, 5')
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-17']
 
         The start and end arguments can be datetime objects.
         >>> from datetime import date
-        >>> weekly(date(2018, 9, 13), date(2018, 9, 17))
+        >>> recur(date(2018, 9, 13), date(2018, 9, 17))
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
 
         The weekdays argument can be any iterable, e.g. a list.
-        >>> weekly(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])
+        >>> recur(20180913, 20180917, weekdays = [0, 1, 2, 3, 4, 5, 6])
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
 
         The weekdays argument can be any iterable, e.g. a range object.
-        >>> weekly(20180913, 20180917, weekdays = range(7))
+        >>> recur(20180913, 20180917, weekdays = range(7))
         ['2018-09-13', '2018-09-14', '2018-09-15', '2018-09-16', '2018-09-17']
     """
 
