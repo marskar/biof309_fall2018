@@ -30,18 +30,17 @@ def make_slides(path: str = 'slides.md', slide_type: str = 'slidy') -> str:
     Examples:
         A minimal example using temporary input and output files
         >>> import tempfile # library needed to make temp files
-        >>> infile_path = tempfile.mkstemp()[1] # tempfile 1
-        >>> write_file(infile_path, "Let's pretend this a Markdown file")
-        >>> out = tempfile.mkstemp()[1] # tempfile 2
+        >>> infile_path = tempfile.mkstemp('.md')[1] # tempfile 1
+        >>> write_file(infile_path, "# Let's pretend this a Markdown file")
+        >>> out = tempfile.mkstemp(suffix='.html')[1] # tempfile 2
         >>> write_file(out, make_slides(infile_path))
-        >>> import fleep
-        >>> with open(out, "rb") as file: fleep.get(file.read(128)).extension
-        ['xml']
+        >>> with open(out, "r") as file: file.read()[:38]
+        '<?xml version="1.0" encoding="utf-8"?>'
     """
     if slide_type in ('slidy', 'dzslides'):
-        return pypandoc.convert_file(path, to=slide_type, format='html', extra_args=['-s'])
+        return pypandoc.convert_file(path, to=slide_type, extra_args=['-s'])
     elif slide_type == 'revealjs':
-        return pypandoc.convert_file(path, to=slide_type, format='html',
+        return pypandoc.convert_file(path, to=slide_type,
                                      extra_args=['-s', '-V',
                                                  'revealjs-url=http://lab.hakim.se/reveal-js'])
     else:
