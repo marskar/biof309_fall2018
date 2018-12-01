@@ -30,12 +30,16 @@ def make_slides(path: str = 'slides.md', slide_type: str = 'slidy') -> str:
     Examples:
         A minimal example using temporary input and output files
         >>> import tempfile # library needed to make temp files
-        >>> infile_path = tempfile.mkstemp('.md')[1] # tempfile 1
-        >>> write_file(infile_path, "# Let's pretend this a Markdown file")
-        >>> out = tempfile.mkstemp(suffix='.html')[1] # tempfile 2
-        >>> write_file(out, make_slides(infile_path))
-        >>> with open(out, "r") as file: file.read()[:38]
+        >>> infile_path = tempfile.mkstemp('.md')[1] # markdown file path
+        >>> write_file(infile_path, "# Markdown header") # markdown content
+        >>> outfile_path = tempfile.mkstemp(suffix='.html')[1] # html file path
+        >>> write_file(outfile_path, make_slides(infile_path)) # html slides
+        >>> with open(outfile_path, "r") as f: outfile_contents = f.read()
+        >>> lines = outfile_contents.split('\\n') # split contents into lines
+        >>> lines[0] # first line
         '<?xml version="1.0" encoding="utf-8"?>'
+        >>> lines[-4] # fourth to last line
+        '<div id="markdown-header" class="title-slide slide section level1"><h1>Markdown header</h1></div>'
     """
     if slide_type in ('slidy', 'dzslides'):
         return pypandoc.convert_file(path, to=slide_type, extra_args=['-s'])
