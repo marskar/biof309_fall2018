@@ -380,9 +380,10 @@ autocmd FileType rmd inoremap <buffer> ;/ <Esc>:normal! a %/%<CR>a
 autocmd FileType r inoremap <buffer> ;8 <Esc>:normal! a %*%<CR>a 
 autocmd FileType rmd inoremap <buffer> ;8 <Esc>:normal! a %*%<CR>a 
 
-autocmd FileType rmd nnoremap <buffer> <leader><space> :w<CR> :!Rscript -e "rmarkdown::render('%')"<CR>
-autocmd FileType r nnoremap <buffer> <leader><space> :w<CR> :!Rscript %<CR>
-autocmd FileType python nnoremap <buffer> <leader><space> :w ! python3<CR>
+autocmd FileType rmd nnoremap <buffer> <leader><CR> :w<CR> :!Rscript -e "rmarkdown::render('%')"<CR>
+autocmd FileType rmd nnoremap <buffer> <leader>] :w<CR> :!Rscript -e "bookdown::render_book('%')"<CR>
+autocmd FileType r nnoremap <buffer> <leader><CR> :w<CR> :!Rscript %<CR>
+autocmd FileType python nnoremap <buffer> <leader><CR> :w ! python3<CR>
 " http://sherifsoliman.com/2017/07/22/nvim-r/
 " press alt+, to have Nvim-R insert the assignment operator: <-
 let R_assign_map = "<A-,>"

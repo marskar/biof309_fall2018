@@ -9,12 +9,13 @@ from matplotlib import pyplot as plt
 digits = load_digits()
 
 digits
-
+digits.keys()
 data = digits['data']
 
 target = digits['target']
 
 data.shape
+target.shape
 
 
 # Or this is better
@@ -31,7 +32,7 @@ predicted = model.predict(x_test)
 cm = confusion_matrix(y_test, predicted)
 a = accuracy_score(y_test, predicted)
 
-# plot the confusion matrix
+# %% plot the confusion matrix
 fig, ax = plt.subplots()
 colorbar = ax.matshow(cm)
 fig.colorbar(colorbar)
@@ -41,9 +42,8 @@ fig.savefig('sklearn.png')
 # In addition to saving the plot, you can show it
 plt.show()
 
-# Accuracy score
+# %% Accuracy score
 a
 
-# 89% accurate!
 # Logistic regression is pretty good...
 # at handwritten digit recognition.
