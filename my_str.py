@@ -1,4 +1,4 @@
-"""Demo of type hints and using pytest to check docstring examples"""
+"""Use pytest to check types and test examples in docstrings"""
 
 import sys
 from typing import Union, Iterable
@@ -21,4 +21,4 @@ def my_str(x: Union[int, str, Iterable] = 5) -> str:
 
 
 if __name__ == '__main__':
-    pytest.main(args=[sys.argv[0]])
+    pytest.main(args=sys.argv)
