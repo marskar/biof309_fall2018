@@ -1,4 +1,5 @@
 import pytest
+import sys
 
 
 def fun(x: int = 5) -> str:
@@ -17,5 +18,5 @@ def fun(x: int = 5) -> str:
 
 
 if __name__ == '__main__':
-    pytest.main(args=['test_fun.py', 'docstring_example.py'])
+    pytest.main(args=[sys.argv[0]])
 
