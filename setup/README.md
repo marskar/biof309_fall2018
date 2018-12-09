@@ -92,8 +92,10 @@ bash Downloads/Anaconda3-5.2.0-MacOSX-x86_64.sh
 ## Install [R Language Support](http://holgerbrandl.github.io/r4intellij/) plugin
 ## Fix shortcut conflicts under Preferences > Vim emulation: Ctrl+G/M/N/P to IDE
 
-## Install RStudio (this also installs `r-essentials`; RStudio is working for me as part of Anaconda 5.2.0)
+# Install RStudio (this also installs `r-essentials`; RStudio is working for me as part of Anaconda 5.2.0)
 conda install -yc r rstudio
+
+## Copy rstudio `user-settings` file to ~/.rstudio-desktop/monitored/user-settings
 
 # Neovim setup
 brew install ctags
