@@ -26,8 +26,4 @@ In addition to Python, I use the [UNIX shell](http://swcarpentry.github.io/shell
 # An interesting image from Wikipedia
 ![doggy](https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg)
 
-# A local image
-![coats](Dog_coat_variation.png)
-
-
 
