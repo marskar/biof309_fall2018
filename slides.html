@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <meta name="author" content="Martin Skarzynski" />
-  <meta name="date" content="2018-09-27" />
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Martin Skarzynski">
+  <meta name="dcterms.date" content="2018-09-27">
   <title>Simple slides with (py)pandoc</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/reveal.css">
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -78,24 +79,34 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" type="text/css" media="screen, projection, print"
-    href="https://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
-  <script src="https://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
-    charset="utf-8" type="text/javascript"></script>
+  <link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/theme/black.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'http://lab.hakim.se/reveal-js/css/print/pdf.css' : 'http://lab.hakim.se/reveal-js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="http://lab.hakim.se/reveal-js/lib/js/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body>
-<div class="slide titlepage">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
   <h1 class="title">Simple slides with (py)pandoc</h1>
-  <p class="author">
-Martin Skarzynski
-  </p>
+  <p class="author">Martin Skarzynski</p>
   <p class="date">2018-09-27</p>
-</div>
-<div id="hobby" class="slide section level1">
+</section>
+
+<section id="hobby" class="slide level1">
 <h1>Hobby</h1>
 <p>Zumba</p>
-</div>
-<div id="fun-fact" class="slide section level1">
+</section>
+<section id="fun-fact" class="slide level1">
 <h1>Fun Fact</h1>
 <p>I speak 4 natural languages</p>
 <ul>
@@ -104,30 +115,50 @@ Martin Skarzynski
 <li>Polish, and</li>
 <li>Russian.</li>
 </ul>
-</div>
-<div id="programming-background" class="slide section level1">
+</section>
+<section id="programming-background" class="slide level1">
 <h1>Programming Background</h1>
 <p>In addition to Python, I use the <a href="http://swcarpentry.github.io/shell-novice/">UNIX shell</a> and the <a href="https://www.r-project.org/about.html">R programming language</a>.</p>
-</div>
-<div id="interesting-python-code" class="slide section level1">
+</section>
+<section id="interesting-python-code" class="slide level1">
 <h1>Interesting Python code</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># get a list of all of the letters in the alphabet </span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">[<span class="bu">chr</span>(<span class="dv">65</span><span class="op">+</span>i) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">26</span>)] <span class="co">#uppercase      </span></a>
 <a class="sourceLine" id="cb1-3" data-line-number="3">[<span class="bu">chr</span>(<span class="dv">97</span><span class="op">+</span>i) <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">26</span>)] <span class="co">#lowercase</span></a></code></pre></div>
-</div>
-<div id="an-interesting-image-from-wikipedia" class="slide section level1">
+</section>
+<section id="an-interesting-image-from-wikipedia" class="slide level1">
 <h1>An interesting image from Wikipedia</h1>
-<div class="figure">
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="doggy" />
-<p class="caption">doggy</p>
-</div>
-</div>
-<div id="a-local-image" class="slide section level1">
+<figure>
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg" alt="doggy" /><figcaption>doggy</figcaption>
+</figure>
+</section>
+<section id="a-local-image" class="slide level1">
 <h1>A local image</h1>
-<div class="figure">
-<img src="Dog_coat_variation.png" alt="coats" />
-<p class="caption">coats</p>
-</div>
-</div>
-</body>
+<figure>
+<img data-src="Dog_coat_variation.png" alt="coats" /><figcaption>coats</figcaption>
+</figure>
+</section>
+    </div>
+  </div>
+
+  <script src="http://lab.hakim.se/reveal-js/lib/js/head.min.js"></script>
+  <script src="http://lab.hakim.se/reveal-js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'http://lab.hakim.se/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'http://lab.hakim.se/reveal-js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'http://lab.hakim.se/reveal-js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
 </html>
