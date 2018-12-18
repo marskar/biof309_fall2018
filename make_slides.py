@@ -1,5 +1,6 @@
-import pypandoc
-import doctest
+import sys
+import pytest
+from pypandoc import convert_file
 
 
 def write_file(filename: str, contents: str) -> None:
@@ -20,19 +21,18 @@ def write_file(filename: str, contents: str) -> None:
         f.write(contents)
 
 
-def make_slides(path: str = 'slides.md', framework: str = 'slidy') -> str:
+def make_slides(source: str = 'slides.md', target: str = 'slidy') -> str:
     """Writes contents to a file named filename
 
     Args:
-        path: The filepath of the target file
-        framework: The HTML slideshow type, must be revealjs, slidy, or dzslides
+        source: The filepath of the target file
+        target: The HTML slideshow type, must be revealjs, slidy, or dzslides
 
     Returns:
         A string of characters that are the contents of an html slideshow.
 
     Raises:
-        TypeError: The framework argument must be passed as string.
-        ValueError: Only three html slide frameworks: revealjs, slidy, or dzslides,
+        ValueError: Only three target frameworks: revealjs, slidy, or dzslides,
             are currently supported.
 
     Examples:
@@ -45,22 +45,17 @@ def make_slides(path: str = 'slides.md', framework: str = 'slidy') -> str:
         >>> with open(outfile_path, "r") as f: outfile_contents = f.read()
         >>> lines = outfile_contents.split('\\n') # split contents into lines
         >>> lines[0] # first line
-        '<?xml version="1.0" encoding="utf-8"?>'
+        '<?xml version="1.0" encoding="utf-8" ?>'
         >>> lines[-4] # fourth to last line
-        '<div id="markdown-header" class="title-slide slide section level1"><h1>Markdown header</h1></div>'
+        '<div id="markdown-header" class="titleslide slide section level1"><h1>Markdown header</h1></div>'
     """
-    if type(framework) is str:
-        if framework in ('slidy', 'dzslides'):
-            return pypandoc.convert_file(path, to=framework, extra_args=['-s'])
-        elif framework == 'revealjs':
-            return pypandoc.convert_file(path, to=framework,
-                                         extra_args=['-s', '-V', 'revealjs-url=http://lab.hakim.se/reveal-js'])
-        else:
-            raise ValueError("Framework argument must be 'revealjs', 'slidy', or 'dzslides', not {framework}.")
+    if target in ('slidy', 'dzslides', 'revealjs'):
+        return convert_file(source, to=target, extra_args=['--self-contained']
+                            if target is not 'revealjs'
+                            else ['-sV', 'revealjs-url=https://revealjs.com'])
     else:
-        raise TypeError("Framework argument type must be str, not {type(framework)}.")
-
+        raise ValueError(f"{target} is not one of the 3 supported formats.")
 
 if __name__ == '__main__':
-    doctest.testmod(verbose=True)
-    write_file('slides.html', make_slides())
+    pytest.main(sys.argv)
+    write_file('revealjs.html', make_slides(target='revealjs'))
