@@ -121,3 +121,17 @@ nnoremap <Bslash>x :action ReopenClosedTab<CR>
 
 " clear search highlighting when hitting backslash twice
 nnoremap <Bslash><Bslash> :nohlsearch<CR>
+
+" Emacs and bash style insert mode shortcuts
+" The opposite of <C-h>
+inoremap <C-d> <C-o>x
+" The opposite of <C-u>
+inoremap <C-k> <C-o>D
+" The opposite of <C-a>
+inoremap <C-e> <C-o>$
+" The opposite of <C-e>
+inoremap <C-a> <C-o>^
+" The opposite of <C-b>
+inoremap <C-f> <C-o>l
+" The opposite of <C-f>
+inoremap <C-b> <C-o>h
