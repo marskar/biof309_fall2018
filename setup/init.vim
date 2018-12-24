@@ -371,9 +371,15 @@ inoremap <C-e> <C-o>$
 " The opposite of <C-e>
 inoremap <C-a> <C-o>^
 " The opposite of <C-b>
-inoremap <C-f> <C-o>l
+inoremap <C-f> <right>
 " The opposite of <C-f>
-inoremap <C-b> <C-o>h
+inoremap <C-b> <left>
+" Alt keys specific to MacOS
+inoremap ∂ <C-o>dw
+inoremap ˚ <up>
+inoremap ∆ <down>
+inoremap ƒ <C-o>w
+inoremap ∫ <C-o>b
 
 " Nvim-R mappings
 " Keyboard shortcuts for <- -> and other operators in R specific files
