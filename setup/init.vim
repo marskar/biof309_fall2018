@@ -366,10 +366,15 @@ set autoread
 inoremap <C-d> <C-o>x
 " The opposite of <C-u>
 inoremap <C-k> <C-o>D
+" <C-o>$ The opposite of <C-a>
+inoremap <C-e> <End>
+" <C-o>^ The opposite of <C-e>
+inoremap <C-a> <Home>
+
 " The opposite of <C-a>
-inoremap <C-e> <C-o>$
+" inoremap <C-e> <C-o>$
 " The opposite of <C-e>
-inoremap <C-a> <C-o>^
+" inoremap <C-a> <C-o>^
 " The opposite of <C-b>
 inoremap <C-f> <right>
 " The opposite of <C-f>
